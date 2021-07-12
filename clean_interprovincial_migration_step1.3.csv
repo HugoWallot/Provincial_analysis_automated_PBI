@@ -1,0 +1,309 @@
+"","ref_year","geo","interprovincial_migration","value","value_fd","value_pc"
+"1",2010,"Alberta","In-migrants",61453,-1615,-2.561
+"2",2010,"Alberta","Out-migrants",59173,-1701,-2.794
+"3",2010,"British Columbia","In-migrants",50050,1941,4.035
+"4",2010,"British Columbia","Out-migrants",43838,5401,14.052
+"5",2010,"Canada","In-migrants",263131,5564,2.16
+"6",2010,"Canada","Out-migrants",263131,5564,2.16
+"7",2010,"Manitoba","In-migrants",11935,841,7.581
+"8",2010,"Manitoba","Out-migrants",14525,917,6.739
+"9",2010,"New Brunswick","In-migrants",10622,-94,-0.877
+"10",2010,"New Brunswick","Out-migrants",10127,-387,-3.681
+"11",2010,"Newfoundland and Labrador","In-migrants",8102,-1773,-17.954
+"12",2010,"Newfoundland and Labrador","Out-migrants",7953,534,7.198
+"13",2010,"Northwest Territories","In-migrants",1890,229,13.787
+"14",2010,"Northwest Territories","Out-migrants",2060,-154,-6.956
+"15",2010,"Nova Scotia","In-migrants",15357,768,5.264
+"16",2010,"Nova Scotia","Out-migrants",15286,1096,7.724
+"17",2010,"Nunavut","In-migrants",972,85,9.583
+"18",2010,"Nunavut","Out-migrants",963,131,15.745
+"19",2010,"Ontario","In-migrants",61065,4375,7.717
+"20",2010,"Ontario","Out-migrants",64974,-949,-1.44
+"21",2010,"Prince Edward Island","In-migrants",2636,131,5.23
+"22",2010,"Prince Edward Island","Out-migrants",2769,-7,-0.252
+"23",2010,"Quebec","In-migrants",20609,370,1.828
+"24",2010,"Quebec","Out-migrants",24957,471,1.924
+"25",2010,"Saskatchewan","In-migrants",17078,296,1.764
+"26",2010,"Saskatchewan","Out-migrants",15376,252,1.666
+"27",2010,"Yukon","In-migrants",1362,10,0.74
+"28",2010,"Yukon","Out-migrants",1130,-40,-3.419
+"29",2011,"Alberta","In-migrants",72725,11272,18.342
+"30",2011,"Alberta","Out-migrants",56757,-2416,-4.083
+"31",2011,"British Columbia","In-migrants",49017,-1033,-2.064
+"32",2011,"British Columbia","Out-migrants",48306,4468,10.192
+"33",2011,"Canada","In-migrants",276246,13115,4.984
+"34",2011,"Canada","Out-migrants",276246,13115,4.984
+"35",2011,"Manitoba","In-migrants",11510,-425,-3.561
+"36",2011,"Manitoba","Out-migrants",15681,1156,7.959
+"37",2011,"New Brunswick","In-migrants",10600,-22,-0.207
+"38",2011,"New Brunswick","Out-migrants",11617,1490,14.713
+"39",2011,"Newfoundland and Labrador","In-migrants",8419,317,3.913
+"40",2011,"Newfoundland and Labrador","Out-migrants",7668,-285,-3.584
+"41",2011,"Northwest Territories","In-migrants",2169,279,14.762
+"42",2011,"Northwest Territories","Out-migrants",2274,214,10.388
+"43",2011,"Nova Scotia","In-migrants",14753,-604,-3.933
+"44",2011,"Nova Scotia","Out-migrants",16401,1115,7.294
+"45",2011,"Nunavut","In-migrants",961,-11,-1.132
+"46",2011,"Nunavut","Out-migrants",965,2,0.208
+"47",2011,"Ontario","In-migrants",61692,627,1.027
+"48",2011,"Ontario","Out-migrants",67434,2460,3.786
+"49",2011,"Prince Edward Island","In-migrants",2757,121,4.59
+"50",2011,"Prince Edward Island","Out-migrants",3071,302,10.906
+"51",2011,"Quebec","In-migrants",21317,708,3.435
+"52",2011,"Quebec","Out-migrants",27057,2100,8.414
+"53",2011,"Saskatchewan","In-migrants",18684,1606,9.404
+"54",2011,"Saskatchewan","Out-migrants",17883,2507,16.305
+"55",2011,"Yukon","In-migrants",1642,280,20.558
+"56",2011,"Yukon","Out-migrants",1132,2,0.177
+"57",2012,"Alberta","In-migrants",89922,17197,23.647
+"58",2012,"Alberta","Out-migrants",53635,-3122,-5.501
+"59",2012,"British Columbia","In-migrants",48291,-726,-1.481
+"60",2012,"British Columbia","Out-migrants",52613,4307,8.916
+"61",2012,"Canada","In-migrants",292592,16346,5.917
+"62",2012,"Canada","Out-migrants",292592,16346,5.917
+"63",2012,"Manitoba","In-migrants",12097,587,5.1
+"64",2012,"Manitoba","Out-migrants",16025,344,2.194
+"65",2012,"New Brunswick","In-migrants",9676,-924,-8.717
+"66",2012,"New Brunswick","Out-migrants",12745,1128,9.71
+"67",2012,"Newfoundland and Labrador","In-migrants",8573,154,1.829
+"68",2012,"Newfoundland and Labrador","Out-migrants",8338,670,8.738
+"69",2012,"Northwest Territories","In-migrants",1864,-305,-14.062
+"70",2012,"Northwest Territories","Out-migrants",2394,120,5.277
+"71",2012,"Nova Scotia","In-migrants",14995,242,1.64
+"72",2012,"Nova Scotia","Out-migrants",18237,1836,11.194
+"73",2012,"Nunavut","In-migrants",1039,78,8.117
+"74",2012,"Nunavut","Out-migrants",1132,167,17.306
+"75",2012,"Ontario","In-migrants",61661,-31,-0.05
+"76",2012,"Ontario","Out-migrants",74799,7365,10.922
+"77",2012,"Prince Edward Island","In-migrants",2594,-163,-5.912
+"78",2012,"Prince Edward Island","Out-migrants",3508,437,14.23
+"79",2012,"Quebec","In-migrants",19853,-1464,-6.868
+"80",2012,"Quebec","Out-migrants",28828,1771,6.545
+"81",2012,"Saskatchewan","In-migrants",20575,1891,10.121
+"82",2012,"Saskatchewan","Out-migrants",18989,1106,6.185
+"83",2012,"Yukon","In-migrants",1452,-190,-11.571
+"84",2012,"Yukon","Out-migrants",1349,217,19.17
+"85",2013,"Alberta","In-migrants",93169,3247,3.611
+"86",2013,"Alberta","Out-migrants",56339,2704,5.041
+"87",2013,"British Columbia","In-migrants",50172,1881,3.895
+"88",2013,"British Columbia","Out-migrants",47658,-4955,-9.418
+"89",2013,"Canada","In-migrants",293568,976,0.334
+"90",2013,"Canada","Out-migrants",293568,976,0.334
+"91",2013,"Manitoba","In-migrants",10968,-1129,-9.333
+"92",2013,"Manitoba","Out-migrants",17114,1089,6.796
+"93",2013,"New Brunswick","In-migrants",10045,369,3.814
+"94",2013,"New Brunswick","Out-migrants",12885,140,1.098
+"95",2013,"Newfoundland and Labrador","In-migrants",7767,-806,-9.402
+"96",2013,"Newfoundland and Labrador","Out-migrants",7545,-793,-9.511
+"97",2013,"Northwest Territories","In-migrants",1871,7,0.376
+"98",2013,"Northwest Territories","Out-migrants",2474,80,3.342
+"99",2013,"Nova Scotia","In-migrants",13687,-1308,-8.723
+"100",2013,"Nova Scotia","Out-migrants",16605,-1632,-8.949
+"101",2013,"Nunavut","In-migrants",942,-97,-9.336
+"102",2013,"Nunavut","Out-migrants",1004,-128,-11.307
+"103",2013,"Ontario","In-migrants",63538,1877,3.044
+"104",2013,"Ontario","Out-migrants",75525,726,0.971
+"105",2013,"Prince Edward Island","In-migrants",2774,180,6.939
+"106",2013,"Prince Edward Island","Out-migrants",3504,-4,-0.114
+"107",2013,"Quebec","In-migrants",18946,-907,-4.569
+"108",2013,"Quebec","Out-migrants",32292,3464,12.016
+"109",2013,"Saskatchewan","In-migrants",18589,-1986,-9.652
+"110",2013,"Saskatchewan","Out-migrants",19065,76,0.4
+"111",2013,"Yukon","In-migrants",1100,-352,-24.242
+"112",2013,"Yukon","Out-migrants",1558,209,15.493
+"113",2014,"Alberta","In-migrants",90742,-2427,-2.605
+"114",2014,"Alberta","Out-migrants",61619,5280,9.372
+"115",2014,"British Columbia","In-migrants",61032,10860,21.646
+"116",2014,"British Columbia","Out-migrants",45173,-2485,-5.214
+"117",2014,"Canada","In-migrants",300989,7421,2.528
+"118",2014,"Canada","Out-migrants",300989,7421,2.528
+"119",2014,"Manitoba","In-migrants",10295,-673,-6.136
+"120",2014,"Manitoba","Out-migrants",17179,65,0.38
+"121",2014,"New Brunswick","In-migrants",9819,-226,-2.25
+"122",2014,"New Brunswick","Out-migrants",13059,174,1.35
+"123",2014,"Newfoundland and Labrador","In-migrants",7536,-231,-2.974
+"124",2014,"Newfoundland and Labrador","Out-migrants",7582,37,0.49
+"125",2014,"Northwest Territories","In-migrants",2259,388,20.738
+"126",2014,"Northwest Territories","Out-migrants",2452,-22,-0.889
+"127",2014,"Nova Scotia","In-migrants",14568,881,6.437
+"128",2014,"Nova Scotia","Out-migrants",16806,201,1.21
+"129",2014,"Nunavut","In-migrants",939,-3,-0.318
+"130",2014,"Nunavut","Out-migrants",992,-12,-1.195
+"131",2014,"Ontario","In-migrants",63426,-112,-0.176
+"132",2014,"Ontario","Out-migrants",78067,2542,3.366
+"133",2014,"Prince Edward Island","In-migrants",2202,-572,-20.62
+"134",2014,"Prince Edward Island","Out-migrants",3101,-403,-11.501
+"135",2014,"Quebec","In-migrants",18392,-554,-2.924
+"136",2014,"Quebec","Out-migrants",32895,603,1.867
+"137",2014,"Saskatchewan","In-migrants",18155,-434,-2.335
+"138",2014,"Saskatchewan","Out-migrants",20707,1642,8.613
+"139",2014,"Yukon","In-migrants",1624,524,47.636
+"140",2014,"Yukon","Out-migrants",1357,-201,-12.901
+"141",2015,"Alberta","In-migrants",81902,-8840,-9.742
+"142",2015,"Alberta","Out-migrants",74478,12859,20.869
+"143",2015,"British Columbia","In-migrants",68375,7343,12.031
+"144",2015,"British Columbia","Out-migrants",45548,375,0.83
+"145",2015,"Canada","In-migrants",318826,17837,5.926
+"146",2015,"Canada","Out-migrants",318826,17837,5.926
+"147",2015,"Manitoba","In-migrants",12774,2479,24.08
+"148",2015,"Manitoba","Out-migrants",18633,1454,8.464
+"149",2015,"New Brunswick","In-migrants",10941,1122,11.427
+"150",2015,"New Brunswick","Out-migrants",12916,-143,-1.095
+"151",2015,"Newfoundland and Labrador","In-migrants",7975,439,5.825
+"152",2015,"Newfoundland and Labrador","Out-migrants",7606,24,0.317
+"153",2015,"Northwest Territories","In-migrants",2047,-212,-9.385
+"154",2015,"Northwest Territories","Out-migrants",2322,-130,-5.302
+"155",2015,"Nova Scotia","In-migrants",16625,2057,14.12
+"156",2015,"Nova Scotia","Out-migrants",17758,952,5.665
+"157",2015,"Nunavut","In-migrants",895,-44,-4.686
+"158",2015,"Nunavut","Out-migrants",1113,121,12.198
+"159",2015,"Ontario","In-migrants",74401,10975,17.304
+"160",2015,"Ontario","Out-migrants",76374,-1693,-2.169
+"161",2015,"Prince Edward Island","In-migrants",2943,741,33.651
+"162",2015,"Prince Edward Island","Out-migrants",3281,180,5.805
+"163",2015,"Quebec","In-migrants",20050,1658,9.015
+"164",2015,"Quebec","Out-migrants",34250,1355,4.119
+"165",2015,"Saskatchewan","In-migrants",18422,267,1.471
+"166",2015,"Saskatchewan","Out-migrants",23172,2465,11.904
+"167",2015,"Yukon","In-migrants",1476,-148,-9.113
+"168",2015,"Yukon","Out-migrants",1375,18,1.326
+"169",2016,"Alberta","In-migrants",59881,-22021,-26.887
+"170",2016,"Alberta","Out-migrants",77702,3224,4.329
+"171",2016,"British Columbia","In-migrants",65364,-3011,-4.404
+"172",2016,"British Columbia","Out-migrants",41778,-3770,-8.277
+"173",2016,"Canada","In-migrants",295487,-23339,-7.32
+"174",2016,"Canada","Out-migrants",295487,-23339,-7.32
+"175",2016,"Manitoba","In-migrants",11813,-961,-7.523
+"176",2016,"Manitoba","Out-migrants",17239,-1394,-7.481
+"177",2016,"New Brunswick","In-migrants",10869,-72,-0.658
+"178",2016,"New Brunswick","Out-migrants",11590,-1326,-10.266
+"179",2016,"Newfoundland and Labrador","In-migrants",6819,-1156,-14.495
+"180",2016,"Newfoundland and Labrador","Out-migrants",7302,-304,-3.997
+"181",2016,"Northwest Territories","In-migrants",1791,-256,-12.506
+"182",2016,"Northwest Territories","Out-migrants",2291,-31,-1.335
+"183",2016,"Nova Scotia","In-migrants",16379,-246,-1.48
+"184",2016,"Nova Scotia","Out-migrants",15105,-2653,-14.94
+"185",2016,"Nunavut","In-migrants",895,0,0
+"186",2016,"Nunavut","Out-migrants",1096,-17,-1.527
+"187",2016,"Ontario","In-migrants",80002,5601,7.528
+"188",2016,"Ontario","Out-migrants",64246,-12128,-15.88
+"189",2016,"Prince Edward Island","In-migrants",3043,100,3.398
+"190",2016,"Prince Edward Island","Out-migrants",3015,-266,-8.107
+"191",2016,"Quebec","In-migrants",20840,790,3.94
+"192",2016,"Quebec","Out-migrants",31430,-2820,-8.234
+"193",2016,"Saskatchewan","In-migrants",16055,-2367,-12.849
+"194",2016,"Saskatchewan","Out-migrants",21486,-1686,-7.276
+"195",2016,"Yukon","In-migrants",1736,260,17.615
+"196",2016,"Yukon","Out-migrants",1207,-168,-12.218
+"197",2017,"Alberta","In-migrants",59010,-871,-1.455
+"198",2017,"Alberta","Out-migrants",69428,-8274,-10.648
+"199",2017,"British Columbia","In-migrants",59738,-5626,-8.607
+"200",2017,"British Columbia","Out-migrants",44445,2667,6.384
+"201",2017,"Canada","In-migrants",284744,-10743,-3.636
+"202",2017,"Canada","Out-migrants",284744,-10743,-3.636
+"203",2017,"Manitoba","In-migrants",11408,-405,-3.428
+"204",2017,"Manitoba","Out-migrants",16950,-289,-1.676
+"205",2017,"New Brunswick","In-migrants",10949,80,0.736
+"206",2017,"New Brunswick","Out-migrants",10448,-1142,-9.853
+"207",2017,"Newfoundland and Labrador","In-migrants",6198,-621,-9.107
+"208",2017,"Newfoundland and Labrador","Out-migrants",8054,752,10.299
+"209",2017,"Northwest Territories","In-migrants",2043,252,14.07
+"210",2017,"Northwest Territories","Out-migrants",2189,-102,-4.452
+"211",2017,"Nova Scotia","In-migrants",17032,653,3.987
+"212",2017,"Nova Scotia","Out-migrants",13556,-1549,-10.255
+"213",2017,"Nunavut","In-migrants",829,-66,-7.374
+"214",2017,"Nunavut","Out-migrants",1091,-5,-0.456
+"215",2017,"Ontario","In-migrants",75855,-4147,-5.184
+"216",2017,"Ontario","Out-migrants",64912,666,1.037
+"217",2017,"Prince Edward Island","In-migrants",3487,444,14.591
+"218",2017,"Prince Edward Island","Out-migrants",3164,149,4.942
+"219",2017,"Quebec","In-migrants",22289,1449,6.953
+"220",2017,"Quebec","Out-migrants",28281,-3149,-10.019
+"221",2017,"Saskatchewan","In-migrants",14336,-1719,-10.707
+"222",2017,"Saskatchewan","Out-migrants",21158,-328,-1.527
+"223",2017,"Yukon","In-migrants",1570,-166,-9.562
+"224",2017,"Yukon","Out-migrants",1068,-139,-11.516
+"225",2018,"Alberta","In-migrants",61605,2595,4.398
+"226",2018,"Alberta","Out-migrants",62734,-6694,-9.642
+"227",2018,"British Columbia","In-migrants",59231,-507,-0.849
+"228",2018,"British Columbia","Out-migrants",46508,2063,4.642
+"229",2018,"Canada","In-migrants",288560,3816,1.34
+"230",2018,"Canada","Out-migrants",288560,3816,1.34
+"231",2018,"Manitoba","In-migrants",10821,-587,-5.146
+"232",2018,"Manitoba","Out-migrants",18309,1359,8.018
+"233",2018,"New Brunswick","In-migrants",12155,1206,11.015
+"234",2018,"New Brunswick","Out-migrants",11615,1167,11.17
+"235",2018,"Newfoundland and Labrador","In-migrants",5717,-481,-7.761
+"236",2018,"Newfoundland and Labrador","Out-migrants",8659,605,7.512
+"237",2018,"Northwest Territories","In-migrants",1997,-46,-2.252
+"238",2018,"Northwest Territories","Out-migrants",2392,203,9.274
+"239",2018,"Nova Scotia","In-migrants",16630,-402,-2.36
+"240",2018,"Nova Scotia","Out-migrants",13285,-271,-1.999
+"241",2018,"Nunavut","In-migrants",1194,365,44.029
+"242",2018,"Nunavut","Out-migrants",1220,129,11.824
+"243",2018,"Ontario","In-migrants",76946,1091,1.438
+"244",2018,"Ontario","Out-migrants",67319,2407,3.708
+"245",2018,"Prince Edward Island","In-migrants",3817,330,9.464
+"246",2018,"Prince Edward Island","Out-migrants",3305,141,4.456
+"247",2018,"Quebec","In-migrants",23340,1051,4.715
+"248",2018,"Quebec","Out-migrants",29456,1175,4.155
+"249",2018,"Saskatchewan","In-migrants",13429,-907,-6.327
+"250",2018,"Saskatchewan","Out-migrants",22396,1238,5.851
+"251",2018,"Yukon","In-migrants",1678,108,6.879
+"252",2018,"Yukon","Out-migrants",1362,294,27.528
+"253",2019,"Alberta","In-migrants",63071,1466,2.38
+"254",2019,"Alberta","Out-migrants",62122,-612,-0.976
+"255",2019,"British Columbia","In-migrants",59152,-79,-0.133
+"256",2019,"British Columbia","Out-migrants",45226,-1282,-2.757
+"257",2019,"Canada","In-migrants",293539,4979,1.725
+"258",2019,"Canada","Out-migrants",293539,4979,1.725
+"259",2019,"Manitoba","In-migrants",10587,-234,-2.162
+"260",2019,"Manitoba","Out-migrants",19372,1063,5.806
+"261",2019,"New Brunswick","In-migrants",12376,221,1.818
+"262",2019,"New Brunswick","Out-migrants",10710,-905,-7.792
+"263",2019,"Newfoundland and Labrador","In-migrants",6036,319,5.58
+"264",2019,"Newfoundland and Labrador","Out-migrants",8010,-649,-7.495
+"265",2019,"Northwest Territories","In-migrants",1685,-312,-15.623
+"266",2019,"Northwest Territories","Out-migrants",2276,-116,-4.849
+"267",2019,"Nova Scotia","In-migrants",18136,1506,9.056
+"268",2019,"Nova Scotia","Out-migrants",14371,1086,8.175
+"269",2019,"Nunavut","In-migrants",1090,-104,-8.71
+"270",2019,"Nunavut","Out-migrants",1391,171,14.016
+"271",2019,"Ontario","In-migrants",75592,-1354,-1.76
+"272",2019,"Ontario","Out-migrants",72262,4943,7.343
+"273",2019,"Prince Edward Island","In-migrants",3633,-184,-4.821
+"274",2019,"Prince Edward Island","Out-migrants",3777,472,14.281
+"275",2019,"Quebec","In-migrants",26994,3654,15.656
+"276",2019,"Quebec","Out-migrants",28496,-960,-3.259
+"277",2019,"Saskatchewan","In-migrants",13711,282,2.1
+"278",2019,"Saskatchewan","Out-migrants",24206,1810,8.082
+"279",2019,"Yukon","In-migrants",1476,-202,-12.038
+"280",2019,"Yukon","Out-migrants",1320,-42,-3.084
+"281",2020,"Alberta","In-migrants",58043,-5028,-7.972
+"282",2020,"Alberta","Out-migrants",60195,-1927,-3.102
+"283",2020,"British Columbia","In-migrants",60943,1791,3.028
+"284",2020,"British Columbia","Out-migrants",39949,-5277,-11.668
+"285",2020,"Canada","In-migrants",279469,-14070,-4.793
+"286",2020,"Canada","Out-migrants",279469,-14070,-4.793
+"287",2020,"Manitoba","In-migrants",10248,-339,-3.202
+"288",2020,"Manitoba","Out-migrants",17615,-1757,-9.07
+"289",2020,"New Brunswick","In-migrants",11669,-707,-5.713
+"290",2020,"New Brunswick","Out-migrants",10243,-467,-4.36
+"291",2020,"Newfoundland and Labrador","In-migrants",5790,-246,-4.076
+"292",2020,"Newfoundland and Labrador","Out-migrants",7096,-914,-11.411
+"293",2020,"Northwest Territories","In-migrants",1674,-11,-0.653
+"294",2020,"Northwest Territories","Out-migrants",2015,-261,-11.467
+"295",2020,"Nova Scotia","In-migrants",17183,-953,-5.255
+"296",2020,"Nova Scotia","Out-migrants",13020,-1351,-9.401
+"297",2020,"Nunavut","In-migrants",1431,341,31.284
+"298",2020,"Nunavut","Out-migrants",1403,12,0.863
+"299",2020,"Ontario","In-migrants",68361,-7231,-9.566
+"300",2020,"Ontario","Out-migrants",71849,-413,-0.572
+"301",2020,"Prince Edward Island","In-migrants",3322,-311,-8.56
+"302",2020,"Prince Edward Island","Out-migrants",3479,-298,-7.89
+"303",2020,"Quebec","In-migrants",25746,-1248,-4.623
+"304",2020,"Quebec","Out-migrants",27442,-1054,-3.699
+"305",2020,"Saskatchewan","In-migrants",13460,-251,-1.831
+"306",2020,"Saskatchewan","Out-migrants",23778,-428,-1.768
+"307",2020,"Yukon","In-migrants",1599,123,8.333
+"308",2020,"Yukon","Out-migrants",1385,65,4.924

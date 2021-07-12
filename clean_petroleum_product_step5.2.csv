@@ -1,0 +1,105 @@
+"","ref_year","geo","products","supply_and_disposition","value","value_fd","value_pc"
+"1",2019,"Alberta","Natural gas liquids","Refinery and blender net production, supply",1326089,NA,NA
+"2",2019,"Alberta","Finished petroleum products","Refinery and blender net production, supply",40843387,NA,NA
+"3",2019,"Alberta","Natural gas liquids","Imports, supply",9741744,NA,NA
+"4",2019,"Alberta","Finished petroleum products","Imports, supply",73246,NA,NA
+"5",2019,"British Columbia","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"6",2019,"British Columbia","Finished petroleum products","Refinery and blender net production, supply",0,NA,NA
+"7",2019,"British Columbia","Natural gas liquids","Imports, supply",42836,NA,NA
+"8",2019,"British Columbia","Finished petroleum products","Imports, supply",2460766,NA,NA
+"9",2019,"Canada","Natural gas liquids","Refinery and blender net production, supply",2036904,NA,NA
+"10",2019,"Canada","Finished petroleum products","Refinery and blender net production, supply",119138331,NA,NA
+"11",2019,"Canada","Natural gas liquids","Imports, supply",13392573,NA,NA
+"12",2019,"Canada","Finished petroleum products","Imports, supply",13399181,NA,NA
+"13",2019,"Manitoba","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"14",2019,"Manitoba","Finished petroleum products","Refinery and blender net production, supply",1525810,NA,NA
+"15",2019,"Manitoba","Natural gas liquids","Imports, supply",41472,NA,NA
+"16",2019,"Manitoba","Finished petroleum products","Imports, supply",85486,NA,NA
+"17",2019,"New Brunswick","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"18",2019,"New Brunswick","Finished petroleum products","Refinery and blender net production, supply",0,NA,NA
+"19",2019,"New Brunswick","Natural gas liquids","Imports, supply",342237,NA,NA
+"20",2019,"New Brunswick","Finished petroleum products","Imports, supply",503252,NA,NA
+"21",2019,"Newfoundland and Labrador","Natural gas liquids","Refinery and blender net production, supply",-71117,NA,NA
+"22",2019,"Newfoundland and Labrador","Finished petroleum products","Refinery and blender net production, supply",4475706,NA,NA
+"23",2019,"Newfoundland and Labrador","Natural gas liquids","Imports, supply",94371,NA,NA
+"24",2019,"Newfoundland and Labrador","Finished petroleum products","Imports, supply",791820,NA,NA
+"25",2019,"Northwest Territories","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"26",2019,"Northwest Territories","Finished petroleum products","Refinery and blender net production, supply",386,NA,NA
+"27",2019,"Northwest Territories","Natural gas liquids","Imports, supply",0,NA,NA
+"28",2019,"Northwest Territories","Finished petroleum products","Imports, supply",0,NA,NA
+"29",2019,"Nova Scotia","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"30",2019,"Nova Scotia","Finished petroleum products","Refinery and blender net production, supply",0,NA,NA
+"31",2019,"Nova Scotia","Natural gas liquids","Imports, supply",41171,NA,NA
+"32",2019,"Nova Scotia","Finished petroleum products","Imports, supply",1516904,NA,NA
+"33",2019,"Nunavut","Natural gas liquids","Imports, supply",0,NA,NA
+"34",2019,"Nunavut","Finished petroleum products","Imports, supply",0,NA,NA
+"35",2019,"Ontario","Natural gas liquids","Refinery and blender net production, supply",516036,NA,NA
+"36",2019,"Ontario","Finished petroleum products","Refinery and blender net production, supply",26325061,NA,NA
+"37",2019,"Ontario","Natural gas liquids","Imports, supply",1653298,NA,NA
+"38",2019,"Ontario","Finished petroleum products","Imports, supply",2505691,NA,NA
+"39",2019,"Prince Edward Island","Natural gas liquids","Refinery and blender net production, supply",0,NA,NA
+"40",2019,"Prince Edward Island","Finished petroleum products","Refinery and blender net production, supply",0,NA,NA
+"41",2019,"Prince Edward Island","Natural gas liquids","Imports, supply",0,NA,NA
+"42",2019,"Prince Edward Island","Finished petroleum products","Imports, supply",0,NA,NA
+"43",2019,"Quebec","Natural gas liquids","Refinery and blender net production, supply",401384,NA,NA
+"44",2019,"Quebec","Finished petroleum products","Refinery and blender net production, supply",23744060,NA,NA
+"45",2019,"Quebec","Natural gas liquids","Imports, supply",812703,NA,NA
+"46",2019,"Quebec","Finished petroleum products","Imports, supply",5446831,NA,NA
+"47",2019,"Saskatchewan","Natural gas liquids","Refinery and blender net production, supply",173249,NA,NA
+"48",2019,"Saskatchewan","Finished petroleum products","Refinery and blender net production, supply",6975952,NA,NA
+"49",2019,"Saskatchewan","Natural gas liquids","Imports, supply",622741,NA,NA
+"50",2019,"Saskatchewan","Finished petroleum products","Imports, supply",12942,NA,NA
+"51",2019,"Yukon","Natural gas liquids","Imports, supply",0,NA,NA
+"52",2019,"Yukon","Finished petroleum products","Imports, supply",2243,NA,NA
+"53",2020,"Alberta","Natural gas liquids","Refinery and blender net production, supply",1467678,141589,10.677
+"54",2020,"Alberta","Finished petroleum products","Refinery and blender net production, supply",38361705,-2481682,-6.076
+"55",2020,"Alberta","Natural gas liquids","Imports, supply",12190139,2448395,25.133
+"56",2020,"Alberta","Finished petroleum products","Imports, supply",35458,-37788,-51.591
+"57",2020,"British Columbia","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"58",2020,"British Columbia","Finished petroleum products","Refinery and blender net production, supply",0,0,NA
+"59",2020,"British Columbia","Natural gas liquids","Imports, supply",38267,-4569,-10.666
+"60",2020,"British Columbia","Finished petroleum products","Imports, supply",1524714,-936052,-38.039
+"61",2020,"Canada","Natural gas liquids","Refinery and blender net production, supply",1872732,-164172,-8.06
+"62",2020,"Canada","Finished petroleum products","Refinery and blender net production, supply",105722855,-13415476,-11.26
+"63",2020,"Canada","Natural gas liquids","Imports, supply",14810136,1417563,10.585
+"64",2020,"Canada","Finished petroleum products","Imports, supply",8555492,-4843689,-36.149
+"65",2020,"Manitoba","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"66",2020,"Manitoba","Finished petroleum products","Refinery and blender net production, supply",1345592,-180218,-11.811
+"67",2020,"Manitoba","Natural gas liquids","Imports, supply",23495,-17977,-43.347
+"68",2020,"Manitoba","Finished petroleum products","Imports, supply",138601,53115,62.133
+"69",2020,"New Brunswick","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"70",2020,"New Brunswick","Finished petroleum products","Refinery and blender net production, supply",0,0,NA
+"71",2020,"New Brunswick","Natural gas liquids","Imports, supply",136130,-206107,-60.223
+"72",2020,"New Brunswick","Finished petroleum products","Imports, supply",405077,-98175,-19.508
+"73",2020,"Newfoundland and Labrador","Natural gas liquids","Refinery and blender net production, supply",-76059,-4942,6.949
+"74",2020,"Newfoundland and Labrador","Finished petroleum products","Refinery and blender net production, supply",1129389,-3346317,-74.766
+"75",2020,"Newfoundland and Labrador","Natural gas liquids","Imports, supply",77988,-16383,-17.36
+"76",2020,"Newfoundland and Labrador","Finished petroleum products","Imports, supply",936937,145117,18.327
+"77",2020,"Northwest Territories","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"78",2020,"Northwest Territories","Finished petroleum products","Refinery and blender net production, supply",638,252,65.285
+"79",2020,"Northwest Territories","Natural gas liquids","Imports, supply",0,0,NA
+"80",2020,"Northwest Territories","Finished petroleum products","Imports, supply",0,0,NA
+"81",2020,"Nova Scotia","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"82",2020,"Nova Scotia","Finished petroleum products","Refinery and blender net production, supply",0,0,NA
+"83",2020,"Nova Scotia","Natural gas liquids","Imports, supply",0,-41171,-100
+"84",2020,"Nova Scotia","Finished petroleum products","Imports, supply",1101302,-415602,-27.398
+"85",2020,"Nunavut","Natural gas liquids","Imports, supply",0,0,NA
+"86",2020,"Nunavut","Finished petroleum products","Imports, supply",0,0,NA
+"87",2020,"Ontario","Natural gas liquids","Refinery and blender net production, supply",445498,-70538,-13.669
+"88",2020,"Ontario","Finished petroleum products","Refinery and blender net production, supply",23107856,-3217205,-12.221
+"89",2020,"Ontario","Natural gas liquids","Imports, supply",1605660,-47638,-2.881
+"90",2020,"Ontario","Finished petroleum products","Imports, supply",1864253,-641438,-25.599
+"91",2020,"Prince Edward Island","Natural gas liquids","Refinery and blender net production, supply",0,0,NA
+"92",2020,"Prince Edward Island","Finished petroleum products","Refinery and blender net production, supply",0,0,NA
+"93",2020,"Prince Edward Island","Natural gas liquids","Imports, supply",0,0,NA
+"94",2020,"Prince Edward Island","Finished petroleum products","Imports, supply",0,0,NA
+"95",2020,"Quebec","Natural gas liquids","Refinery and blender net production, supply",352447,-48937,-12.192
+"96",2020,"Quebec","Finished petroleum products","Refinery and blender net production, supply",20955543,-2788517,-11.744
+"97",2020,"Quebec","Natural gas liquids","Imports, supply",30751,-781952,-96.216
+"98",2020,"Quebec","Finished petroleum products","Imports, supply",2530189,-2916642,-53.548
+"99",2020,"Saskatchewan","Natural gas liquids","Refinery and blender net production, supply",105731,-67518,-38.972
+"100",2020,"Saskatchewan","Finished petroleum products","Refinery and blender net production, supply",6763159,-212793,-3.05
+"101",2020,"Saskatchewan","Natural gas liquids","Imports, supply",707706,84965,13.644
+"102",2020,"Saskatchewan","Finished petroleum products","Imports, supply",18203,5261,40.651
+"103",2020,"Yukon","Natural gas liquids","Imports, supply",0,0,NA
+"104",2020,"Yukon","Finished petroleum products","Imports, supply",758,-1485,-66.206

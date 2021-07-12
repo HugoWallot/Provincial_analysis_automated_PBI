@@ -1,0 +1,225 @@
+"","ref_year","geo","type_of_electricity_generation","value","value_fd","value_pc"
+"1",2010,"Alberta","Total all types of electricity generation",61292116,2115548,3.575
+"2",2010,"British Columbia","Total all types of electricity generation",59477155,-2724310,-4.38
+"3",2010,"Canada","Total all types of electricity generation",566759687,-10740832,-1.86
+"4",2010,"Manitoba","Total all types of electricity generation",33442834,-377935,-1.117
+"5",2010,"New Brunswick","Total all types of electricity generation",11073413,-1977491,-15.152
+"6",2010,"Newfoundland and Labrador","Total all types of electricity generation",40761074,3382354,9.049
+"7",2010,"Northwest Territories","Total all types of electricity generation",722675,45262,6.682
+"8",2010,"Nova Scotia","Total all types of electricity generation",11662894,54032,0.465
+"9",2010,"Nunavut","Total all types of electricity generation",165369,5086,3.173
+"10",2010,"Ontario","Total all types of electricity generation",141247071,-2671254,-1.856
+"11",2010,"Prince Edward Island","Total all types of electricity generation",354210,234534,195.974
+"12",2010,"Quebec","Total all types of electricity generation",184094446,-9526931,-4.92
+"13",2010,"Saskatchewan","Total all types of electricity generation",22062289,700543,3.279
+"14",2010,"Yukon","Total all types of electricity generation",404141,-270,-0.067
+"15",2011,"Alberta","Total all types of electricity generation",60727833,-564283,-0.921
+"16",2011,"British Columbia","Total all types of electricity generation",66205426,6728271,11.312
+"17",2011,"Canada","Total all types of electricity generation",585450812,18691125,3.298
+"18",2011,"Manitoba","Total all types of electricity generation",34753742,1310908,3.92
+"19",2011,"New Brunswick","Total all types of electricity generation",11242717,169304,1.529
+"20",2011,"Newfoundland and Labrador","Total all types of electricity generation",40710234,-50840,-0.125
+"21",2011,"Northwest Territories","Total all types of electricity generation",647282,-75393,-10.432
+"22",2011,"Nova Scotia","Total all types of electricity generation",11160772,-502122,-4.305
+"23",2011,"Nunavut","Total all types of electricity generation",171889,6520,3.943
+"24",2011,"Ontario","Total all types of electricity generation",139796281,-1450790,-1.027
+"25",2011,"Prince Edward Island","Total all types of electricity generation",333158,-21052,-5.943
+"26",2011,"Quebec","Total all types of electricity generation",196938071,12843625,6.977
+"27",2011,"Saskatchewan","Total all types of electricity generation",22338796,276507,1.253
+"28",2011,"Yukon","Total all types of electricity generation",424611,20470,5.065
+"29",2012,"Alberta","Total all types of electricity generation",65538731,4810898,7.922
+"30",2012,"British Columbia","Total all types of electricity generation",69783334,3577908,5.404
+"31",2012,"Canada","Total all types of electricity generation",594875004,9424192,1.61
+"32",2012,"Manitoba","Total all types of electricity generation",32647482,-2106260,-6.061
+"33",2012,"New Brunswick","Total all types of electricity generation",9625047,-1617670,-14.389
+"34",2012,"Newfoundland and Labrador","Total all types of electricity generation",42986446,2276212,5.591
+"35",2012,"Northwest Territories","Total all types of electricity generation",621998,-25284,-3.906
+"36",2012,"Nova Scotia","Total all types of electricity generation",10066924,-1093848,-9.801
+"37",2012,"Nunavut","Total all types of electricity generation",177561,5672,3.3
+"38",2012,"Ontario","Total all types of electricity generation",141177451,1381170,0.988
+"39",2012,"Prince Edward Island","Total all types of electricity generation",164972,-168186,-50.482
+"40",2012,"Quebec","Total all types of electricity generation",199680429,2742358,1.392
+"41",2012,"Saskatchewan","Total all types of electricity generation",21951965,-386831,-1.732
+"42",2012,"Yukon","Total all types of electricity generation",452664,28053,6.607
+"43",2013,"Alberta","Total all types of electricity generation",63655943,-1882788,-2.873
+"44",2013,"British Columbia","Total all types of electricity generation",63706503,-6076831,-8.708
+"45",2013,"Canada","Total all types of electricity generation",610704568,15829564,2.661
+"46",2013,"Manitoba","Total all types of electricity generation",35868870,3221388,9.867
+"47",2013,"New Brunswick","Total all types of electricity generation",13993325,4368278,45.384
+"48",2013,"Newfoundland and Labrador","Total all types of electricity generation",42142761,-843685,-1.963
+"49",2013,"Northwest Territories","Total all types of electricity generation",644729,22731,3.655
+"50",2013,"Nova Scotia","Total all types of electricity generation",10522893,455969,4.529
+"51",2013,"Nunavut","Total all types of electricity generation",178979,1418,0.799
+"52",2013,"Ontario","Total all types of electricity generation",149512793,8335342,5.904
+"53",2013,"Prince Edward Island","Total all types of electricity generation",154221,-10751,-6.517
+"54",2013,"Quebec","Total all types of electricity generation",206801363,7120934,3.566
+"55",2013,"Saskatchewan","Total all types of electricity generation",23075478,1123513,5.118
+"56",2013,"Yukon","Total all types of electricity generation",446710,-5954,-1.315
+"57",2014,"Alberta","Total all types of electricity generation",65654083,1998140,3.139
+"58",2014,"British Columbia","Total all types of electricity generation",59813915,-3892588,-6.11
+"59",2014,"Canada","Total all types of electricity generation",599925351,-10779217,-1.765
+"60",2014,"Manitoba","Total all types of electricity generation",34982776,-886094,-2.47
+"61",2014,"New Brunswick","Total all types of electricity generation",15092229,1098904,7.853
+"62",2014,"Newfoundland and Labrador","Total all types of electricity generation",39746060,-2396701,-5.687
+"63",2014,"Northwest Territories","Total all types of electricity generation",645759,1030,0.16
+"64",2014,"Nova Scotia","Total all types of electricity generation",10289866,-233027,-2.214
+"65",2014,"Nunavut","Total all types of electricity generation",181280,2301,1.286
+"66",2014,"Ontario","Total all types of electricity generation",148151612,-1361181,-0.91
+"67",2014,"Prince Edward Island","Total all types of electricity generation",249306,95085,61.655
+"68",2014,"Quebec","Total all types of electricity generation",201561154,-5240209,-2.534
+"69",2014,"Saskatchewan","Total all types of electricity generation",23129342,53864,0.233
+"70",2014,"Yukon","Total all types of electricity generation",427969,-18741,-4.195
+"71",2015,"Alberta","Total all types of electricity generation",60624024,-5030059,-7.661
+"72",2015,"British Columbia","Total all types of electricity generation",63103398,3289483,5.5
+"73",2015,"Canada","Total all types of electricity generation",592755750,-7169601,-1.195
+"74",2015,"Manitoba","Total all types of electricity generation",35760949,778173,2.224
+"75",2015,"New Brunswick","Total all types of electricity generation",13681912,-1410317,-9.345
+"76",2015,"Newfoundland and Labrador","Total all types of electricity generation",41698156,1952096,4.911
+"77",2015,"Northwest Territories","Total all types of electricity generation",623422,-22337,-3.459
+"78",2015,"Nova Scotia","Total all types of electricity generation",9874529,-415337,-4.036
+"79",2015,"Nunavut","Total all types of electricity generation",186900,5620,3.1
+"80",2015,"Ontario","Total all types of electricity generation",143099205,-5052407,-3.41
+"81",2015,"Prince Edward Island","Total all types of electricity generation",273201,23895,9.585
+"82",2015,"Quebec","Total all types of electricity generation",199673240,-1887914,-0.937
+"83",2015,"Saskatchewan","Total all types of electricity generation",23708751,579409,2.505
+"84",2015,"Yukon","Total all types of electricity generation",448063,20094,4.695
+"85",2016,"Alberta","Total all types of electricity generation",79236599,18612575,30.702
+"86",2016,"Alberta","Total electricity production from combustible fuels",72518466,NA,NA
+"87",2016,"British Columbia","Total all types of electricity generation",69546737,6443339,10.211
+"88",2016,"British Columbia","Total electricity production from combustible fuels",6608102,NA,NA
+"89",2016,"Canada","Total all types of electricity generation",646291975,53536225,9.032
+"90",2016,"Canada","Total electricity production from combustible fuels",136734015,NA,NA
+"91",2016,"Manitoba","Total all types of electricity generation",37010056,1249107,3.493
+"92",2016,"Manitoba","Total electricity production from combustible fuels",148613,NA,NA
+"93",2016,"New Brunswick","Total all types of electricity generation",15185571,1503659,10.99
+"94",2016,"New Brunswick","Total electricity production from combustible fuels",6617323,NA,NA
+"95",2016,"Newfoundland and Labrador","Total all types of electricity generation",41483272,-214884,-0.515
+"96",2016,"Newfoundland and Labrador","Total electricity production from combustible fuels",2171455,NA,NA
+"97",2016,"Northwest Territories","Total all types of electricity generation",809470,186048,29.843
+"98",2016,"Northwest Territories","Total electricity production from combustible fuels",551458,NA,NA
+"99",2016,"Nova Scotia","Total all types of electricity generation",9820565,-53964,-0.546
+"100",2016,"Nova Scotia","Total electricity production from combustible fuels",7998113,NA,NA
+"101",2016,"Nunavut","Total all types of electricity generation",188812,1912,1.023
+"102",2016,"Nunavut","Total electricity production from combustible fuels",188812,NA,NA
+"103",2016,"Ontario","Total all types of electricity generation",157212118,14112913,9.862
+"104",2016,"Ontario","Total electricity production from combustible fuels",16990322,NA,NA
+"105",2016,"Prince Edward Island","Total all types of electricity generation",602584,329383,120.564
+"106",2016,"Prince Edward Island","Total electricity production from combustible fuels",9894,NA,NA
+"107",2016,"Quebec","Total all types of electricity generation",210132369,10459129,5.238
+"108",2016,"Quebec","Total electricity production from combustible fuels",2310922,NA,NA
+"109",2016,"Saskatchewan","Total all types of electricity generation",24616420,907669,3.828
+"110",2016,"Saskatchewan","Total electricity production from combustible fuels",20593507,NA,NA
+"111",2016,"Yukon","Total all types of electricity generation",447402,-661,-0.148
+"112",2016,"Yukon","Total electricity production from combustible fuels",27028,NA,NA
+"113",2017,"Alberta","Total all types of electricity generation",81404538,2167939,2.736
+"114",2017,"Alberta","Total electricity production from combustible fuels",74599891,2081425,2.87
+"115",2017,"British Columbia","Total all types of electricity generation",74483505,4936768,7.098
+"116",2017,"British Columbia","Total electricity production from combustible fuels",6379784,-228318,-3.455
+"117",2017,"Canada","Total all types of electricity generation",649378846,3086871,0.478
+"118",2017,"Canada","Total electricity production from combustible fuels",129720511,-7013504,-5.129
+"119",2017,"Manitoba","Total all types of electricity generation",37076622,66566,0.18
+"120",2017,"Manitoba","Total electricity production from combustible fuels",158960,10347,6.962
+"121",2017,"New Brunswick","Total all types of electricity generation",13403571,-1782000,-11.735
+"122",2017,"New Brunswick","Total electricity production from combustible fuels",4881644,-1735679,-26.229
+"123",2017,"Newfoundland and Labrador","Total all types of electricity generation",39068766,-2414506,-5.82
+"124",2017,"Newfoundland and Labrador","Total electricity production from combustible fuels",2169625,-1830,-0.084
+"125",2017,"Northwest Territories","Total all types of electricity generation",756479,-52991,-6.546
+"126",2017,"Northwest Territories","Total electricity production from combustible fuels",488889,-62569,-11.346
+"127",2017,"Nova Scotia","Total all types of electricity generation",10034471,213906,2.178
+"128",2017,"Nova Scotia","Total electricity production from combustible fuels",7870242,-127871,-1.599
+"129",2017,"Nunavut","Total all types of electricity generation",189874,1062,0.562
+"130",2017,"Nunavut","Total electricity production from combustible fuels",189874,1062,0.562
+"131",2017,"Ontario","Total all types of electricity generation",152745550,-4466568,-2.841
+"132",2017,"Ontario","Total electricity production from combustible fuels",10275808,-6714514,-39.52
+"133",2017,"Prince Edward Island","Total all types of electricity generation",615066,12482,2.071
+"134",2017,"Prince Edward Island","Total electricity production from combustible fuels",10858,964,9.743
+"135",2017,"Quebec","Total all types of electricity generation",214375372,4243003,2.019
+"136",2017,"Quebec","Total electricity production from combustible fuels",2525902,214980,9.303
+"137",2017,"Saskatchewan","Total all types of electricity generation",24739133,122713,0.499
+"138",2017,"Saskatchewan","Total electricity production from combustible fuels",20132400,-461107,-2.239
+"139",2017,"Yukon","Total all types of electricity generation",485899,38497,8.605
+"140",2017,"Yukon","Total electricity production from combustible fuels",36634,9606,35.541
+"141",2018,"Alberta","Total all types of electricity generation",79308153,-2096385,-2.575
+"142",2018,"Alberta","Total electricity production from combustible fuels",72958398,-1641493,-2.2
+"143",2018,"British Columbia","Total all types of electricity generation",67457336,-7026169,-9.433
+"144",2018,"British Columbia","Total electricity production from combustible fuels",5599378,-780406,-12.232
+"145",2018,"Canada","Total all types of electricity generation",641471279,-7907567,-1.218
+"146",2018,"Canada","Total electricity production from combustible fuels",130514455,793944,0.612
+"147",2018,"Manitoba","Total all types of electricity generation",31655933,-5420689,-14.62
+"148",2018,"Manitoba","Total electricity production from combustible fuels",90972,-67988,-42.771
+"149",2018,"New Brunswick","Total all types of electricity generation",13640299,236728,1.766
+"150",2018,"New Brunswick","Total electricity production from combustible fuels",5404420,522776,10.709
+"151",2018,"Newfoundland and Labrador","Total all types of electricity generation",44086177,5017411,12.843
+"152",2018,"Newfoundland and Labrador","Total electricity production from combustible fuels",1771895,-397730,-18.332
+"153",2018,"Northwest Territories","Total all types of electricity generation",754912,-1567,-0.207
+"154",2018,"Northwest Territories","Total electricity production from combustible fuels",482672,-6217,-1.272
+"155",2018,"Nova Scotia","Total all types of electricity generation",10209095,174624,1.74
+"156",2018,"Nova Scotia","Total electricity production from combustible fuels",8075626,205384,2.61
+"157",2018,"Nunavut","Total all types of electricity generation",192757,2883,1.518
+"158",2018,"Nunavut","Total electricity production from combustible fuels",192757,2883,1.518
+"159",2018,"Ontario","Total all types of electricity generation",154626615,1881065,1.232
+"160",2018,"Ontario","Total electricity production from combustible fuels",13353087,3077279,29.947
+"161",2018,"Prince Edward Island","Total all types of electricity generation",661555,46489,7.558
+"162",2018,"Prince Edward Island","Total electricity production from combustible fuels",20473,9615,88.552
+"163",2018,"Quebec","Total all types of electricity generation",213862455,-512917,-0.239
+"164",2018,"Quebec","Total electricity production from combustible fuels",2212202,-313700,-12.419
+"165",2018,"Saskatchewan","Total all types of electricity generation",24533790,-205343,-0.83
+"166",2018,"Saskatchewan","Total electricity production from combustible fuels",20292346,159946,0.794
+"167",2018,"Yukon","Total all types of electricity generation",482202,-3697,-0.761
+"168",2018,"Yukon","Total electricity production from combustible fuels",60229,23595,64.407
+"169",2019,"Alberta","Total all types of electricity generation",81572870,2264717,2.856
+"170",2019,"Alberta","Total electricity production from combustible fuels",74921439,1963041,2.691
+"171",2019,"British Columbia","Total all types of electricity generation",63953269,-3504067,-5.194
+"172",2019,"British Columbia","Total electricity production from combustible fuels",6512614,913236,16.31
+"173",2019,"Canada","Total all types of electricity generation",640391343,-1079936,-0.168
+"174",2019,"Canada","Total electricity production from combustible fuels",131857802,1343347,1.029
+"175",2019,"Manitoba","Total all types of electricity generation",33927868,2271935,7.177
+"176",2019,"Manitoba","Total electricity production from combustible fuels",106176,15204,16.713
+"177",2019,"New Brunswick","Total all types of electricity generation",13538135,-102164,-0.749
+"178",2019,"New Brunswick","Total electricity production from combustible fuels",4640719,-763701,-14.131
+"179",2019,"Newfoundland and Labrador","Total all types of electricity generation",42636355,-1449822,-3.289
+"180",2019,"Newfoundland and Labrador","Total electricity production from combustible fuels",1713701,-58194,-3.284
+"181",2019,"Northwest Territories","Total all types of electricity generation",761849,6937,0.919
+"182",2019,"Northwest Territories","Total electricity production from combustible fuels",493047,10375,2.149
+"183",2019,"Nova Scotia","Total all types of electricity generation",9737299,-471796,-4.621
+"184",2019,"Nova Scotia","Total electricity production from combustible fuels",7608565,-467061,-5.784
+"185",2019,"Nunavut","Total all types of electricity generation",190857,-1900,-0.986
+"186",2019,"Nunavut","Total electricity production from combustible fuels",190857,-1900,-0.986
+"187",2019,"Ontario","Total all types of electricity generation",156273921,1647306,1.065
+"188",2019,"Ontario","Total electricity production from combustible fuels",13594197,241110,1.806
+"189",2019,"Prince Edward Island","Total all types of electricity generation",652919,-8636,-1.305
+"190",2019,"Prince Edward Island","Total electricity production from combustible fuels",5862,-14611,-71.367
+"191",2019,"Quebec","Total all types of electricity generation",212142239,-1720216,-0.804
+"192",2019,"Quebec","Total electricity production from combustible fuels",2001452,-210750,-9.527
+"193",2019,"Saskatchewan","Total all types of electricity generation",24535267,1477,0.006
+"194",2019,"Saskatchewan","Total electricity production from combustible fuels",19977752,-314594,-1.55
+"195",2019,"Yukon","Total all types of electricity generation",468495,-13707,-2.843
+"196",2019,"Yukon","Total electricity production from combustible fuels",91421,31192,51.789
+"197",2020,"Alberta","Total all types of electricity generation",75454522,-6118348,-7.5
+"198",2020,"Alberta","Total electricity production from combustible fuels",67670804,-7250635,-9.678
+"199",2020,"British Columbia","Total all types of electricity generation",72620857,8667588,13.553
+"200",2020,"British Columbia","Total electricity production from combustible fuels",5741164,-771450,-11.845
+"201",2020,"Canada","Total all types of electricity generation",635572100,-4819243,-0.753
+"202",2020,"Canada","Total electricity production from combustible fuels",121349902,-10507900,-7.969
+"203",2020,"Manitoba","Total all types of electricity generation",37238137,3310269,9.757
+"204",2020,"Manitoba","Total electricity production from combustible fuels",108932,2756,2.596
+"205",2020,"New Brunswick","Total all types of electricity generation",12251953,-1286182,-9.5
+"206",2020,"New Brunswick","Total electricity production from combustible fuels",3789915,-850804,-18.333
+"207",2020,"Newfoundland and Labrador","Total all types of electricity generation",40008629,-2627726,-6.163
+"208",2020,"Newfoundland and Labrador","Total electricity production from combustible fuels",1506111,-207590,-12.114
+"209",2020,"Northwest Territories","Total all types of electricity generation",687992,-73857,-9.694
+"210",2020,"Northwest Territories","Total electricity production from combustible fuels",413056,-79991,-16.224
+"211",2020,"Nova Scotia","Total all types of electricity generation",9090791,-646508,-6.64
+"212",2020,"Nova Scotia","Total electricity production from combustible fuels",7426287,-182278,-2.396
+"213",2020,"Nunavut","Total all types of electricity generation",190317,-540,-0.283
+"214",2020,"Nunavut","Total electricity production from combustible fuels",190317,-540,-0.283
+"215",2020,"Ontario","Total all types of electricity generation",155308248,-965673,-0.618
+"216",2020,"Ontario","Total electricity production from combustible fuels",13191727,-402470,-2.961
+"217",2020,"Prince Edward Island","Total all types of electricity generation",650191,-2728,-0.418
+"218",2020,"Prince Edward Island","Total electricity production from combustible fuels",5486,-376,-6.414
+"219",2020,"Quebec","Total all types of electricity generation",207014654,-5127585,-2.417
+"220",2020,"Quebec","Total electricity production from combustible fuels",2025703,24251,1.212
+"221",2020,"Saskatchewan","Total all types of electricity generation",24513899,-21368,-0.087
+"222",2020,"Saskatchewan","Total electricity production from combustible fuels",19186158,-791594,-3.962
+"223",2020,"Yukon","Total all types of electricity generation",541910,73415,15.67
+"224",2020,"Yukon","Total electricity production from combustible fuels",94242,2821,3.086

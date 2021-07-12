@@ -1,0 +1,309 @@
+"","ref_date","estimate","geo","value","value_fd","value_pc"
+"1","2010","Average age","Alberta",14,-0.2,-1.408
+"2","2010","Remaining useful life","Alberta",56.5,0.7,1.254
+"3","2010","Average age","British Columbia",15.2,-0.1,-0.654
+"4","2010","Remaining useful life","British Columbia",53.4,0.3,0.565
+"5","2010","Average age","Canada",15.1,-0.1,-0.658
+"6","2010","Remaining useful life","Canada",53.9,0.5,0.936
+"7","2010","Average age","Manitoba",16.3,-0.2,-1.212
+"8","2010","Remaining useful life","Manitoba",51.2,0.6,1.186
+"9","2010","Average age","New Brunswick",15.1,0,0
+"10","2010","Remaining useful life","New Brunswick",52.9,0.2,0.38
+"11","2010","Average age","Newfoundland and Labrador",19.7,-0.1,-0.505
+"12","2010","Remaining useful life","Newfoundland and Labrador",41.2,0.4,0.98
+"13","2010","Average age","Northwest Territories",16.6,-0.1,-0.599
+"14","2010","Remaining useful life","Northwest Territories",49.4,0.5,1.022
+"15","2010","Average age","Nova Scotia",16.3,-0.2,-1.212
+"16","2010","Remaining useful life","Nova Scotia",49.5,0.9,1.852
+"17","2010","Average age","Nunavut",15.1,0,0
+"18","2010","Remaining useful life","Nunavut",54.5,0.1,0.184
+"19","2010","Average age","Ontario",14.4,-0.1,-0.69
+"20","2010","Remaining useful life","Ontario",55.3,0.4,0.729
+"21","2010","Average age","Prince Edward Island",14.4,0,0
+"22","2010","Remaining useful life","Prince Edward Island",53.3,0,0
+"23","2010","Average age","Quebec",15.8,-0.1,-0.629
+"24","2010","Remaining useful life","Quebec",53,0.4,0.76
+"25","2010","Average age","Saskatchewan",15.7,-0.2,-1.258
+"26","2010","Remaining useful life","Saskatchewan",53.8,0.5,0.938
+"27","2010","Average age","Yukon",15.6,0,0
+"28","2010","Remaining useful life","Yukon",49.4,0.3,0.611
+"29","2011","Average age","Alberta",13.8,-0.2,-1.429
+"30","2011","Remaining useful life","Alberta",57.1,0.6,1.062
+"31","2011","Average age","British Columbia",15.1,-0.1,-0.658
+"32","2011","Remaining useful life","British Columbia",53.7,0.3,0.562
+"33","2011","Average age","Canada",14.9,-0.2,-1.325
+"34","2011","Remaining useful life","Canada",54.3,0.4,0.742
+"35","2011","Average age","Manitoba",16.1,-0.2,-1.227
+"36","2011","Remaining useful life","Manitoba",51.8,0.6,1.172
+"37","2011","Average age","New Brunswick",15,-0.1,-0.662
+"38","2011","Remaining useful life","New Brunswick",53.2,0.3,0.567
+"39","2011","Average age","Newfoundland and Labrador",19.4,-0.3,-1.523
+"40","2011","Remaining useful life","Newfoundland and Labrador",41.7,0.5,1.214
+"41","2011","Average age","Northwest Territories",16.4,-0.2,-1.205
+"42","2011","Remaining useful life","Northwest Territories",49.8,0.4,0.81
+"43","2011","Average age","Nova Scotia",16.1,-0.2,-1.227
+"44","2011","Remaining useful life","Nova Scotia",50.1,0.6,1.212
+"45","2011","Average age","Nunavut",15,-0.1,-0.662
+"46","2011","Remaining useful life","Nunavut",54.7,0.2,0.367
+"47","2011","Average age","Ontario",14.3,-0.1,-0.694
+"48","2011","Remaining useful life","Ontario",55.7,0.4,0.723
+"49","2011","Average age","Prince Edward Island",14.3,-0.1,-0.694
+"50","2011","Remaining useful life","Prince Edward Island",53.3,0,0
+"51","2011","Average age","Quebec",15.7,-0.1,-0.633
+"52","2011","Remaining useful life","Quebec",53.4,0.4,0.755
+"53","2011","Average age","Saskatchewan",15.6,-0.1,-0.637
+"54","2011","Remaining useful life","Saskatchewan",54.2,0.4,0.743
+"55","2011","Average age","Yukon",15.4,-0.2,-1.282
+"56","2011","Remaining useful life","Yukon",49.9,0.5,1.012
+"57","2012","Average age","Alberta",13.6,-0.2,-1.449
+"58","2012","Remaining useful life","Alberta",57.7,0.6,1.051
+"59","2012","Average age","British Columbia",15,-0.1,-0.662
+"60","2012","Remaining useful life","British Columbia",54.1,0.4,0.745
+"61","2012","Average age","Canada",14.8,-0.1,-0.671
+"62","2012","Remaining useful life","Canada",54.7,0.4,0.737
+"63","2012","Average age","Manitoba",16,-0.1,-0.621
+"64","2012","Remaining useful life","Manitoba",52.4,0.6,1.158
+"65","2012","Average age","New Brunswick",14.9,-0.1,-0.667
+"66","2012","Remaining useful life","New Brunswick",53.4,0.2,0.376
+"67","2012","Average age","Newfoundland and Labrador",19.2,-0.2,-1.031
+"68","2012","Remaining useful life","Newfoundland and Labrador",42.4,0.7,1.679
+"69","2012","Average age","Northwest Territories",16.3,-0.1,-0.61
+"70","2012","Remaining useful life","Northwest Territories",50,0.2,0.402
+"71","2012","Average age","Nova Scotia",15.9,-0.2,-1.242
+"72","2012","Remaining useful life","Nova Scotia",50.6,0.5,0.998
+"73","2012","Average age","Nunavut",15,0,0
+"74","2012","Remaining useful life","Nunavut",54.8,0.1,0.183
+"75","2012","Average age","Ontario",14.2,-0.1,-0.699
+"76","2012","Remaining useful life","Ontario",56,0.3,0.539
+"77","2012","Average age","Prince Edward Island",14.3,0,0
+"78","2012","Remaining useful life","Prince Edward Island",53.3,0,0
+"79","2012","Average age","Quebec",15.5,-0.2,-1.274
+"80","2012","Remaining useful life","Quebec",53.8,0.4,0.749
+"81","2012","Average age","Saskatchewan",15.4,-0.2,-1.282
+"82","2012","Remaining useful life","Saskatchewan",54.6,0.4,0.738
+"83","2012","Average age","Yukon",15.3,-0.1,-0.649
+"84","2012","Remaining useful life","Yukon",50.3,0.4,0.802
+"85","2013","Average age","Alberta",13.4,-0.2,-1.471
+"86","2013","Remaining useful life","Alberta",58.3,0.6,1.04
+"87","2013","Average age","British Columbia",14.9,-0.1,-0.667
+"88","2013","Remaining useful life","British Columbia",54.4,0.3,0.555
+"89","2013","Average age","Canada",14.7,-0.1,-0.676
+"90","2013","Remaining useful life","Canada",55.1,0.4,0.731
+"91","2013","Average age","Manitoba",15.8,-0.2,-1.25
+"92","2013","Remaining useful life","Manitoba",52.8,0.4,0.763
+"93","2013","Average age","New Brunswick",14.9,0,0
+"94","2013","Remaining useful life","New Brunswick",53.5,0.1,0.187
+"95","2013","Average age","Newfoundland and Labrador",18.9,-0.3,-1.562
+"96","2013","Remaining useful life","Newfoundland and Labrador",43.4,1,2.358
+"97","2013","Average age","Northwest Territories",16.3,0,0
+"98","2013","Remaining useful life","Northwest Territories",50,0,0
+"99","2013","Average age","Nova Scotia",15.8,-0.1,-0.629
+"100","2013","Remaining useful life","Nova Scotia",51,0.4,0.791
+"101","2013","Average age","Nunavut",15,0,0
+"102","2013","Remaining useful life","Nunavut",55,0.2,0.365
+"103","2013","Average age","Ontario",14.1,-0.1,-0.704
+"104","2013","Remaining useful life","Ontario",56.2,0.2,0.357
+"105","2013","Average age","Prince Edward Island",14.3,0,0
+"106","2013","Remaining useful life","Prince Edward Island",53.3,0,0
+"107","2013","Average age","Quebec",15.4,-0.1,-0.645
+"108","2013","Remaining useful life","Quebec",54.2,0.4,0.743
+"109","2013","Average age","Saskatchewan",15.3,-0.1,-0.649
+"110","2013","Remaining useful life","Saskatchewan",54.9,0.3,0.549
+"111","2013","Average age","Yukon",15.2,-0.1,-0.654
+"112","2013","Remaining useful life","Yukon",50.7,0.4,0.795
+"113","2014","Average age","Alberta",13.2,-0.2,-1.493
+"114","2014","Remaining useful life","Alberta",58.9,0.6,1.029
+"115","2014","Average age","British Columbia",14.8,-0.1,-0.671
+"116","2014","Remaining useful life","British Columbia",54.7,0.3,0.551
+"117","2014","Average age","Canada",14.6,-0.1,-0.68
+"118","2014","Remaining useful life","Canada",55.5,0.4,0.726
+"119","2014","Average age","Manitoba",15.7,-0.1,-0.633
+"120","2014","Remaining useful life","Manitoba",53.3,0.5,0.947
+"121","2014","Average age","New Brunswick",14.9,0,0
+"122","2014","Remaining useful life","New Brunswick",53.4,-0.1,-0.187
+"123","2014","Average age","Newfoundland and Labrador",18.4,-0.5,-2.646
+"124","2014","Remaining useful life","Newfoundland and Labrador",44.9,1.5,3.456
+"125","2014","Average age","Northwest Territories",16.3,0,0
+"126","2014","Remaining useful life","Northwest Territories",50,0,0
+"127","2014","Average age","Nova Scotia",15.7,-0.1,-0.633
+"128","2014","Remaining useful life","Nova Scotia",51.4,0.4,0.784
+"129","2014","Average age","Nunavut",14.9,-0.1,-0.667
+"130","2014","Remaining useful life","Nunavut",55.2,0.2,0.364
+"131","2014","Average age","Ontario",14,-0.1,-0.709
+"132","2014","Remaining useful life","Ontario",56.5,0.3,0.534
+"133","2014","Average age","Prince Edward Island",14.4,0.1,0.699
+"134","2014","Remaining useful life","Prince Edward Island",53.3,0,0
+"135","2014","Average age","Quebec",15.3,-0.1,-0.649
+"136","2014","Remaining useful life","Quebec",54.5,0.3,0.554
+"137","2014","Average age","Saskatchewan",15.2,-0.1,-0.654
+"138","2014","Remaining useful life","Saskatchewan",55.3,0.4,0.729
+"139","2014","Average age","Yukon",15.1,-0.1,-0.658
+"140","2014","Remaining useful life","Yukon",51,0.3,0.592
+"141","2015","Average age","Alberta",13.1,-0.1,-0.758
+"142","2015","Remaining useful life","Alberta",59.4,0.5,0.849
+"143","2015","Average age","British Columbia",14.8,0,0
+"144","2015","Remaining useful life","British Columbia",55,0.3,0.548
+"145","2015","Average age","Canada",14.5,-0.1,-0.685
+"146","2015","Remaining useful life","Canada",55.8,0.3,0.541
+"147","2015","Average age","Manitoba",15.5,-0.2,-1.274
+"148","2015","Remaining useful life","Manitoba",53.9,0.6,1.126
+"149","2015","Average age","New Brunswick",14.9,0,0
+"150","2015","Remaining useful life","New Brunswick",53.4,0,0
+"151","2015","Average age","Newfoundland and Labrador",17.8,-0.6,-3.261
+"152","2015","Remaining useful life","Newfoundland and Labrador",47,2.1,4.677
+"153","2015","Average age","Northwest Territories",16.3,0,0
+"154","2015","Remaining useful life","Northwest Territories",50,0,0
+"155","2015","Average age","Nova Scotia",15.6,-0.1,-0.637
+"156","2015","Remaining useful life","Nova Scotia",51.6,0.2,0.389
+"157","2015","Average age","Nunavut",14.8,-0.1,-0.671
+"158","2015","Remaining useful life","Nunavut",55.5,0.3,0.543
+"159","2015","Average age","Ontario",14,0,0
+"160","2015","Remaining useful life","Ontario",56.7,0.2,0.354
+"161","2015","Average age","Prince Edward Island",14.4,0,0
+"162","2015","Remaining useful life","Prince Edward Island",53.2,-0.1,-0.188
+"163","2015","Average age","Quebec",15.2,-0.1,-0.654
+"164","2015","Remaining useful life","Quebec",54.8,0.3,0.55
+"165","2015","Average age","Saskatchewan",15.1,-0.1,-0.658
+"166","2015","Remaining useful life","Saskatchewan",55.7,0.4,0.723
+"167","2015","Average age","Yukon",15,-0.1,-0.662
+"168","2015","Remaining useful life","Yukon",51.3,0.3,0.588
+"169","2016","Average age","Alberta",12.8,-0.3,-2.29
+"170","2016","Remaining useful life","Alberta",60.2,0.8,1.347
+"171","2016","Average age","British Columbia",14.6,-0.2,-1.351
+"172","2016","Remaining useful life","British Columbia",55.5,0.5,0.909
+"173","2016","Average age","Canada",14.3,-0.2,-1.379
+"174","2016","Remaining useful life","Canada",56.4,0.6,1.075
+"175","2016","Average age","Manitoba",15.1,-0.4,-2.581
+"176","2016","Remaining useful life","Manitoba",55,1.1,2.041
+"177","2016","Average age","New Brunswick",14.9,0,0
+"178","2016","Remaining useful life","New Brunswick",53.4,0,0
+"179","2016","Average age","Newfoundland and Labrador",16.8,-1,-5.618
+"180","2016","Remaining useful life","Newfoundland and Labrador",50.1,3.1,6.596
+"181","2016","Average age","Northwest Territories",16.1,-0.2,-1.227
+"182","2016","Remaining useful life","Northwest Territories",50.3,0.3,0.6
+"183","2016","Average age","Nova Scotia",15.4,-0.2,-1.282
+"184","2016","Remaining useful life","Nova Scotia",52.2,0.6,1.163
+"185","2016","Average age","Nunavut",14.7,-0.1,-0.676
+"186","2016","Remaining useful life","Nunavut",56.1,0.6,1.081
+"187","2016","Average age","Ontario",13.8,-0.2,-1.429
+"188","2016","Remaining useful life","Ontario",57.1,0.4,0.705
+"189","2016","Average age","Prince Edward Island",14.5,0.1,0.694
+"190","2016","Remaining useful life","Prince Edward Island",53.1,-0.1,-0.188
+"191","2016","Average age","Quebec",15,-0.2,-1.316
+"192","2016","Remaining useful life","Quebec",55.2,0.4,0.73
+"193","2016","Average age","Saskatchewan",14.8,-0.3,-1.987
+"194","2016","Remaining useful life","Saskatchewan",56.4,0.7,1.257
+"195","2016","Average age","Yukon",14.9,-0.1,-0.667
+"196","2016","Remaining useful life","Yukon",51.7,0.4,0.78
+"197","2017","Average age","Alberta",12.9,0.1,0.781
+"198","2017","Remaining useful life","Alberta",59.6,-0.6,-0.997
+"199","2017","Average age","British Columbia",14.7,0.1,0.685
+"200","2017","Remaining useful life","British Columbia",55.1,-0.4,-0.721
+"201","2017","Average age","Canada",14.4,0.1,0.699
+"202","2017","Remaining useful life","Canada",55.9,-0.5,-0.887
+"203","2017","Average age","Manitoba",15.4,0.3,1.987
+"204","2017","Remaining useful life","Manitoba",54,-1,-1.818
+"205","2017","Average age","New Brunswick",14.9,0,0
+"206","2017","Remaining useful life","New Brunswick",53.5,0.1,0.187
+"207","2017","Average age","Newfoundland and Labrador",17.6,0.8,4.762
+"208","2017","Remaining useful life","Newfoundland and Labrador",47.2,-2.9,-5.788
+"209","2017","Average age","Northwest Territories",16.3,0.2,1.242
+"210","2017","Remaining useful life","Northwest Territories",49.8,-0.5,-0.994
+"211","2017","Average age","Nova Scotia",15.5,0.1,0.649
+"212","2017","Remaining useful life","Nova Scotia",51.7,-0.5,-0.958
+"213","2017","Average age","Nunavut",14.7,0,0
+"214","2017","Remaining useful life","Nunavut",55.7,-0.4,-0.713
+"215","2017","Average age","Ontario",14,0.2,1.449
+"216","2017","Remaining useful life","Ontario",56.7,-0.4,-0.701
+"217","2017","Average age","Prince Edward Island",14.3,-0.2,-1.379
+"218","2017","Remaining useful life","Prince Edward Island",53.3,0.2,0.377
+"219","2017","Average age","Quebec",15.2,0.2,1.333
+"220","2017","Remaining useful life","Quebec",54.7,-0.5,-0.906
+"221","2017","Average age","Saskatchewan",14.9,0.1,0.676
+"222","2017","Remaining useful life","Saskatchewan",56,-0.4,-0.709
+"223","2017","Average age","Yukon",15.1,0.2,1.342
+"224","2017","Remaining useful life","Yukon",51.1,-0.6,-1.161
+"225","2018","Average age","Alberta",12.8,-0.1,-0.775
+"226","2018","Remaining useful life","Alberta",59.9,0.3,0.503
+"227","2018","Average age","British Columbia",14.6,-0.1,-0.68
+"228","2018","Remaining useful life","British Columbia",55.2,0.1,0.181
+"229","2018","Average age","Canada",14.3,-0.1,-0.694
+"230","2018","Remaining useful life","Canada",56,0.1,0.179
+"231","2018","Average age","Manitoba",15.3,-0.1,-0.649
+"232","2018","Remaining useful life","Manitoba",54.3,0.3,0.556
+"233","2018","Average age","New Brunswick",14.9,0,0
+"234","2018","Remaining useful life","New Brunswick",53.5,0,0
+"235","2018","Average age","Newfoundland and Labrador",17.2,-0.4,-2.273
+"236","2018","Remaining useful life","Newfoundland and Labrador",48.4,1.2,2.542
+"237","2018","Average age","Northwest Territories",16.3,0,0
+"238","2018","Remaining useful life","Northwest Territories",49.5,-0.3,-0.602
+"239","2018","Average age","Nova Scotia",15.5,0,0
+"240","2018","Remaining useful life","Nova Scotia",51.8,0.1,0.193
+"241","2018","Average age","Nunavut",14.5,-0.2,-1.361
+"242","2018","Remaining useful life","Nunavut",56.2,0.5,0.898
+"243","2018","Average age","Ontario",13.9,-0.1,-0.714
+"244","2018","Remaining useful life","Ontario",56.7,0,0
+"245","2018","Average age","Prince Edward Island",14.3,0,0
+"246","2018","Remaining useful life","Prince Edward Island",53.3,0,0
+"247","2018","Average age","Quebec",15.1,-0.1,-0.658
+"248","2018","Remaining useful life","Quebec",54.8,0.1,0.183
+"249","2018","Average age","Saskatchewan",14.6,-0.3,-2.013
+"250","2018","Remaining useful life","Saskatchewan",56.5,0.5,0.893
+"251","2018","Average age","Yukon",15.1,0,0
+"252","2018","Remaining useful life","Yukon",51.2,0.1,0.196
+"253","2019","Average age","Alberta",12.7,-0.1,-0.781
+"254","2019","Remaining useful life","Alberta",60,0.1,0.167
+"255","2019","Average age","British Columbia",14.6,0,0
+"256","2019","Remaining useful life","British Columbia",55.3,0.1,0.181
+"257","2019","Average age","Canada",14.3,0,0
+"258","2019","Remaining useful life","Canada",56.1,0.1,0.179
+"259","2019","Average age","Manitoba",15.3,0,0
+"260","2019","Remaining useful life","Manitoba",54.3,0,0
+"261","2019","Average age","New Brunswick",14.8,-0.1,-0.671
+"262","2019","Remaining useful life","New Brunswick",53.5,0,0
+"263","2019","Average age","Newfoundland and Labrador",17.1,-0.1,-0.581
+"264","2019","Remaining useful life","Newfoundland and Labrador",48.7,0.3,0.62
+"265","2019","Average age","Northwest Territories",16.3,0,0
+"266","2019","Remaining useful life","Northwest Territories",49.2,-0.3,-0.606
+"267","2019","Average age","Nova Scotia",15.5,0,0
+"268","2019","Remaining useful life","Nova Scotia",51.8,0,0
+"269","2019","Average age","Nunavut",14.4,-0.1,-0.69
+"270","2019","Remaining useful life","Nunavut",56.3,0.1,0.178
+"271","2019","Average age","Ontario",13.9,0,0
+"272","2019","Remaining useful life","Ontario",56.7,0,0
+"273","2019","Average age","Prince Edward Island",14.3,0,0
+"274","2019","Remaining useful life","Prince Edward Island",53.3,0,0
+"275","2019","Average age","Quebec",15.1,0,0
+"276","2019","Remaining useful life","Quebec",54.8,0,0
+"277","2019","Average age","Saskatchewan",14.5,-0.1,-0.685
+"278","2019","Remaining useful life","Saskatchewan",56.7,0.2,0.354
+"279","2019","Average age","Yukon",15.1,0,0
+"280","2019","Remaining useful life","Yukon",51.2,0,0
+"281","2020","Average age","Alberta",12.8,0.1,0.787
+"282","2020","Remaining useful life","Alberta",59.8,-0.2,-0.333
+"283","2020","Average age","British Columbia",14.7,0.1,0.685
+"284","2020","Remaining useful life","British Columbia",54.9,-0.4,-0.723
+"285","2020","Average age","Canada",14.4,0.1,0.699
+"286","2020","Remaining useful life","Canada",55.8,-0.3,-0.535
+"287","2020","Average age","Manitoba",15.6,0.3,1.961
+"288","2020","Remaining useful life","Manitoba",53.4,-0.9,-1.657
+"289","2020","Average age","New Brunswick",14.8,0,0
+"290","2020","Remaining useful life","New Brunswick",53.6,0.1,0.187
+"291","2020","Average age","Newfoundland and Labrador",18.2,1.1,6.433
+"292","2020","Remaining useful life","Newfoundland and Labrador",45.6,-3.1,-6.366
+"293","2020","Average age","Northwest Territories",16.3,0,0
+"294","2020","Remaining useful life","Northwest Territories",49.5,0.3,0.61
+"295","2020","Average age","Nova Scotia",15.6,0.1,0.645
+"296","2020","Remaining useful life","Nova Scotia",51.4,-0.4,-0.772
+"297","2020","Average age","Nunavut",14.9,0.5,3.472
+"298","2020","Remaining useful life","Nunavut",54.9,-1.4,-2.487
+"299","2020","Average age","Ontario",13.9,0,0
+"300","2020","Remaining useful life","Ontario",56.6,-0.1,-0.176
+"301","2020","Average age","Prince Edward Island",14.3,0,0
+"302","2020","Remaining useful life","Prince Edward Island",53.4,0.1,0.188
+"303","2020","Average age","Quebec",15.2,0.1,0.662
+"304","2020","Remaining useful life","Quebec",54.6,-0.2,-0.365
+"305","2020","Average age","Saskatchewan",14.8,0.3,2.069
+"306","2020","Remaining useful life","Saskatchewan",56,-0.7,-1.235
+"307","2020","Average age","Yukon",15,-0.1,-0.662
+"308","2020","Remaining useful life","Yukon",51.3,0.1,0.195

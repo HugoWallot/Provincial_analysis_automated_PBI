@@ -1,0 +1,1537 @@
+---
+title: "Cansim NDM formatting"
+author: "Hugo"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  workflowr::wflow_html:
+    toc: true
+    toc_depth: 6
+    toc_float: false
+    code_folding: hide
+  chunk_output_type: console
+params: 
+ Developer_mode: FALSE
+ tests: TRUE
+---
+
+# initial date 2021-07-02 
+
+#notes
+The contribution to percent change in national GDP from provinces isn't available on Cansim. I can make a formula to create it if needs be.
+
+
+
+# Introduction
+Step 1.1
+- Gross domestic product (GDP) at basic prices, by industry, monthly, growth rates (x 1,000,000)
+[36-10-0434-02](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610043402)
+
+- Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
+[36-10-0434-03](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403)
+
+
+Step 1.2
+-   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000) [36-10-0402-01](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201)
+
+Step 1.3
+- Population estimates on July 1st, by age and sex [17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501)
+
+- Estimates of the components of international migration, quarterly [17-10-0040-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001)
+
+- Estimates of the components of interprovincial migration, quarterly [17-10-0020-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710002001)
+
+
+Step 2.1
+- New housing price index, monthly [18-10-0205-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810020501)
+
+- Bank of Canada, money market and other interest rates [10-10-0139-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1010013901)
+
+
+Step 3.1
+- Archived - Labour force characteristics by province, territory and economic region, annual, inactive [14-10-0090-01](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=1410009001)
+
+- Labour force characteristics by sex and detailed age group, monthly, unadjusted for seasonality (x 1,000) [14-10-0017-01](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=1410001701)
+
+- Labour force characteristics by industry, monthly, unadjusted for seasonality (x 1,000) [14-10-0022-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410002201)
+
+
+Step 3.2
+- Labour productivity and related measures by business sector industry and by non-commercial activity consistent with the industry accounts [36-10-0480-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610048001)
+
+Step 3.3
+- Employment by industry, annual [14-10-0202-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410020201)
+
+Step 3.4
+- Supplementary unemployment rates, annual [14-10-0078-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410007801)
+
+Step 3.5
+- Duration of unemployment, monthly, seasonally adjusted [14-10-0342-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410034201)
+
+Step 3.6
+- Employment insurance beneficiaries (regular benefits) by province and territory, monthly, seasonally adjusted [14-10-0011-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410001101)
+
+Step 4.1
+- Consumer Price Index, annual average, not seasonally adjusted [18-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501)
+
+Step 4.2
+- Average weekly earnings by industry, annual [14-10-0204-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410020401)
+
+
+Step 5.1
+- Infrastructure Economic Accounts, average age and remaining useful service life ratio by asset and asset function [36-10-0611-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610061101)
+
+Step 5.2
+- Electric power generation, monthly generation by type of electricity [25-10-0015-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501)
+
+
+- Petroleum products by supply and disposition, monthly [25-10-0081-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510008101)
+
+
+Step 6.1
+- Business or organization ability to take on more debt, by business characteristics, third quarter of 2020 [33-10-0287-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310028701)
+
+Step 6.2
+- Trade in goods by exporter characteristics, by industry of establishment (x 1,000) [12-10-0098-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1210009801)
+
+
+## packages needed
+
+Here's a list of all the necessery package to run the program.
+
+```{r setup , message=FALSE, echo=FALSE, warning=FALSE}
+
+# install.packages("rmarkdown")
+# install.packages("tidyverse")
+# install.packages("DT")
+# install.packages("cansim")
+# install.packages("janitor")
+# install.packages("here")
+# install.packages("plotly") #added by Hugo 
+# install.packages("summarytools")
+# install.packages("lubridate")
+
+
+library(rmarkdown) # to avoid fatal error when running chunk of code
+library(tidyverse) # all the tools I need to manipulate and graph data.
+library(DT) # for creating the interactive table
+library(janitor) # for cleaning table names
+library(cansim) # for downloading NDM tables
+library(here) # for managing folder paths.
+library(plotly) # for building interactive graph
+library(summarytools) # quickly summarise data
+library(tsibble) # needed for functions
+library(params) # needed to compile
+library(lubridate) #needed for date format
+
+
+```
+
+
+## Core functions and parameters
+
+```{r core functions and parameters, echo=FALSE}
+
+# paramters for the project : This year can be changed to extand the length of the final tables.
+from_this_year <- "2009-12-29"
+up_to_this_year <- "2021"
+
+#This part of the code is used to get rid of incomplete columns which cause distortion in the percent change and first difference value.
+
+Incomplete_Year1 <- "2010"
+Incomplete_Year2 <- "2021"
+
+
+## codelists 
+
+two_digit_naics_code <- c("[T001]","[11]", "[21]", "[22]", "[23]", "[31-33]", "[41]", "[44-45]", "[48-49]", "[51]", "[52]", "[53]", "[54]", "[55]", "[56]", "[61]", "[62]", "[71]", "[72]", "[81]", "[91]")
+
+provinces <- c(
+  "Alberta", "British Columbia", "Canada", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Northwest Territories", "Nunavut", "Yukon")
+
+#table numbers
+#step 1.1
+gdp_canada_per_industry_table_number <- "36-10-0434-03" # initialy, the table monthly was used "36-10-0434-02", but this annual table reduce the length of the code for the same result so we'll use it instead.
+#step 1.2
+gdp_provinces_per_industry_table_number <- "36-10-0402-01"
+#step 1.3
+population_table_number <- "17-10-0005-01"
+international_migration_table_number <- "17-10-0040-01"
+interprovincial_migration_table_number <- "17-10-0020-01"
+#step 2.1
+housing_price_index_table_number <- "18-10-0205-01"
+Central_Bank_interest_rate_table_number <- "10-10-0139-01"
+#step 3.1
+labour_force_annually_table_number <- "14-10-0090-01" #archived so not used
+labour_force_monthly_table_number <- "14-10-0017-01"
+labour_force_monthly_industry_table_number <- "14-10-0022-01" #can be formatted if needs be.
+#step 3.2
+labour_productivity_table_number <- "36-10-0480-01"
+#step 3.3
+employment_industry_annual_table_number <- "14-10-0202-01"
+#step 3.4
+supplementary_unemployment_table_number <- "14-10-0078-01"
+#step 3.5
+duration_unemployment_table_number <- "14-10-0342-01"
+#step 3.6
+employment_insurance_beneficiaries_table_number <- "14-10-0011-01"
+#step 4.1
+consumer_price_index_table_number <- "18-10-0005-01"
+#step 4.2
+average_weekly_earning_table_number <- "14-10-0204-01"
+#step 5.1
+average_remaining_life_of_infrastructure_table_number <- "36-10-0611-01"
+#step 5.2
+electric_power_generation_table_number <- "25-10-0015-01"
+petroleum_product_table_number <- "25-10-0081-01"
+#step 6.1
+ability_of_business_to_take_more_debt_table_number <- "33-10-0287-01"
+#step 6.2
+trade_in_good_by_industry_table_number <- "12-10-0098-01"
+
+
+
+
+#functions from Arman taken from another project :
+# Message from Arman : here I will describe the functions required in the project. the most important one is the one for creating interactive tables in the browser that allow you to change which columns to show and to search through tables. it is important for the search function and performance for the columns to be categories and/or numerics.
+
+
+    # fd = first difference          pc = Percent Change
+fd_pc <- list(
+            fd = ~(.x - lag(.x)),
+            pc = ~((.x / lag(.x)- 1) * 100))
+
+
+    # This is the template table which will show the data
+interactive_table <- function(data) {
+  DT::datatable(
+    {{ data }},
+    extensions = c("ColReorder", "Buttons"), options = list(
+      colReorder = TRUE,
+      dom = "Bfrtip",
+      buttons = c("copy", "csv", I("colvis")),
+      searchHighlight = TRUE,
+      search = list(regex = TRUE)
+    ),
+    filter = "top"
+  )
+}
+
+# test for the interactive table
+# interactive_table(gapminder::gapminder)
+# summarytools::view(dfSummary(LFS))  for exploring tables
+
+```
+
+
+### paths
+
+all the files in this program will now be created relative to where you run this script; it will create all the necessary subflorder and files from the location below
+
+```{r location,  echo=FALSE, include=FALSE}
+here()
+```
+
+
+
+# Loading GDP table per industry for Canada Step 1.1 x1,000,000
+
+```{r database for canada gdp,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+gdp_canada_per_industry <- cansim::get_cansim(gdp_canada_per_industry_table_number)
+gdp_canada_per_industry <- janitor::clean_names(gdp_canada_per_industry) # get rid of capital letters in col names
+
+
+```
+
+```{r gdp canada formatting}
+
+unique(gdp_canada_per_industry$seasonal_adjustment)
+
+gdp_canada_per_industry %>%
+  select(ref_date, geo, north_american_industry_classification_system_naics, value, classification_code_for_north_american_industry_classification_system_naics, prices, seasonal_adjustment) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(prices %in% c("Chained (2012) dollars")) %>% #only keep said value
+  filter(seasonal_adjustment %in% c("Seasonally adjusted at annual rates")) %>% #only keep said value
+  select(! seasonal_adjustment) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+   distinct() %>%
+  select(!classification_code_for_north_american_industry_classification_system_naics) %>%
+  select(! prices) %>%
+  #mutate(value = value/12) %>%  #this function is only for when we use the monthly table at annual rate
+  rename_if(is.numeric, funs(str_c("value"))) ->
+clean_gdp_canada_per_industry
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_gdp_canada_per_industry_tsbl <- 
+  as_tsibble(clean_gdp_canada_per_industry, key = c(geo, north_american_industry_classification_system_naics))
+data_gdp_canada_per_industry_tsbl %>%
+  group_by_key() %>% 
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_gdp_canada_per_industry
+
+
+clean_gdp_canada_per_industry %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, north_american_industry_classification_system_naics) %>% #order the data by factors
+  group_by( north_american_industry_classification_system_naics, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_gdp_canada_per_industry
+
+#as_tibble(Transit_gdp_canada_per_industry) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_gdp_canada_per_industry
+
+write.csv(Transit_gdp_canada_per_industry, file = "clean_gdp_canada_per_industry_step1.1.csv")
+
+interactive_table(Transit_gdp_canada_per_industry)
+
+```
+
+
+# GDP table per industry for provinces Step 1.2 (x 1,000,000)
+
+```{r database for province gdp,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+gdp_provinces_per_industry <- cansim::get_cansim(gdp_provinces_per_industry_table_number)
+gdp_provinces_per_industry <- janitor::clean_names(gdp_provinces_per_industry) # get rid of capital letters in col names
+
+```
+
+```{r gdp provinces formatting}
+
+
+gdp_provinces_per_industry %>%
+  select(ref_date, geo, north_american_industry_classification_system_naics, value, classification_code_for_north_american_industry_classification_system_naics, value_2) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(value_2 %in% c("Chained (2012) dollars", "Contributions to percent change")) %>% #only keep said value
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+   distinct() %>%
+  select(!classification_code_for_north_american_industry_classification_system_naics) %>%
+  #select(! value_2) %>%
+  rename_if(is.numeric, funs(str_c("value"))) ->
+clean_gdp_provinces_per_industry
+
+clean_gdp_provinces_per_industry %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, north_american_industry_classification_system_naics, value_2) %>% #order the data by factors
+  group_by(north_american_industry_classification_system_naics, geo, value_2) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`) %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  mutate(across(where(is.character), as.factor)) ->
+Transit_gdp_provinces_per_industry
+
+#as_tibble(Transit_gdp_provinces_per_industry) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_gdp_provinces_per_industry
+
+write.csv(Transit_gdp_provinces_per_industry, file = "clean_gdp_provinces_per_industry_step1.2.csv")
+
+interactive_table(Transit_gdp_provinces_per_industry)
+
+
+```
+
+
+```{r provinces gdp CPC Canada gdp formatting}
+
+Transit_gdp_canada_per_industry %>%
+  select(ref_year, geo, north_american_industry_classification_system_naics, value_fd) %>%
+  rename(total_GDP_growth_canada = value_fd) %>%
+  rename(ref_date = ref_year)  %>%
+  ungroup() %>%
+  select(! geo) ->
+  provinces_gdp_CPC_canada_gdp1
+
+Transit_gdp_provinces_per_industry %>%
+  select(ref_date, geo, north_american_industry_classification_system_naics, value_2, value_fd) %>%
+  rename(value = value_fd) %>%
+  filter(value_2 %in% "Chained (2012) dollars") %>% #only keep said value
+  ungroup() %>%
+  select(! value_2) ->
+  provinces_gdp_CPC_canada_gdp2
+
+Transit_gdp_canada_per_industry %>%
+  select(ref_year, geo, north_american_industry_classification_system_naics, value_fd) %>%
+  rename(value = value_fd) %>%
+  rename(ref_date = ref_year)  ->
+  provinces_gdp_CPC_canada_gdp3
+
+provinces_gdp_CPC_canada_gdp4 <- rbind(as_tibble(provinces_gdp_CPC_canada_gdp2), as_tibble(provinces_gdp_CPC_canada_gdp3))
+
+provinces_gdp_CPC_canada_gdp <- merge(as_tibble(provinces_gdp_CPC_canada_gdp1), as_tibble(provinces_gdp_CPC_canada_gdp4), by = c("ref_date", "north_american_industry_classification_system_naics"))
+
+provinces_gdp_CPC_canada_gdp %>%
+  mutate(gdp_contribution_to_national_percent_change = value/total_GDP_growth_canada) %>%
+  mutate(across(where(is.numeric), round, 3)) ->
+  provinces_gdp_CPC_canada_gdp
+
+write.csv(provinces_gdp_CPC_canada_gdp, file = "clean_contribution_to_national_gdp_percent_change_step1.2.csv")
+
+interactive_table(provinces_gdp_CPC_canada_gdp)
+
+
+
+
+
+```
+
+
+
+
+# population table numbers Step 1.3
+
+```{r database for population,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+
+population <- cansim::get_cansim(population_table_number)
+population <- janitor::clean_names(population) # get rid of capital letters in col names
+
+
+```
+
+
+```{r population formatting}
+population %>%
+  select(ref_date, geo, age_group, value, sex) %>%
+  #filter(ref_date > from_this_year) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y")) %>% 
+  filter(age_group %in% "All ages") %>% #only keep said value
+  filter(sex %in% "Both sexes") %>% #only keep said value
+  distinct() %>%
+  select(! age_group) %>%
+  select(! sex) ->
+clean_population
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_clean_population_tsbl <- as_tsibble(clean_population, key = c(geo))
+data_clean_population_tsbl %>%
+  group_by_key() %>% 
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_population
+
+clean_population %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo) %>% #order the data by factors
+  group_by(geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) %>% #get rid of useless columns
+  relocate(`ref_year`)  -> #place ref_year as first column
+Transit_population
+
+#as_tibble(Transit_population) %>%
+ #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_population
+
+write.csv(Transit_population, file = "clean_population_step1.3.csv")
+
+interactive_table(Transit_population)
+
+
+```
+
+# international migration Step 1.3
+
+```{r database for international migration,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+international_migration <- cansim::get_cansim(international_migration_table_number)
+international_migration <- janitor::clean_names(international_migration) # get rid of capital letters in col names
+
+```
+
+
+```{r international migration formatting}
+
+international_migration %>%
+  select(ref_date, geo, components_of_population_growth, value) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(components_of_population_growth %in% c("Immigrants", "Emigrants")) %>% #only keep said value
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_international_migration
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_international_migration_tsbl <- 
+  as_tsibble(clean_international_migration, key = c(geo, components_of_population_growth))
+data_international_migration_tsbl %>%
+  group_by_key() %>% 
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_international_migration
+
+
+clean_international_migration %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, components_of_population_growth) %>% #order the data by factors
+  group_by(components_of_population_growth, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_international_migration
+
+#as_tibble(Transit_international_migration) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_international_migration
+
+write.csv(Transit_international_migration, file = "clean_international_migration_step1.3.csv")
+
+interactive_table(Transit_international_migration)
+
+```
+
+# interprovincial migration Step 1.3
+
+```{r database for interprovincial migration,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+interprovincial_migration <- cansim::get_cansim(interprovincial_migration_table_number)
+interprovincial_migration <- janitor::clean_names(interprovincial_migration) # get rid of capital letters in col names
+
+```
+```{r interprovincial migration formatting}
+
+interprovincial_migration %>%
+  select(ref_date, geo, interprovincial_migration, value) %>%
+  #filter(ref_date > from_this_year) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_interprovincial_migration
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_interprovincial_migration_tsbl <- 
+  as_tsibble(clean_interprovincial_migration, key = c(geo, interprovincial_migration))
+data_interprovincial_migration_tsbl %>%
+  group_by_key() %>% 
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_interprovincial_migration
+
+
+clean_interprovincial_migration %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, interprovincial_migration) %>% #order the data by factors
+  group_by(interprovincial_migration, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_interprovincial_migration
+
+#as_tibble(Transit_interprovincial_migration) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_interprovincial_migration
+
+write.csv(Transit_interprovincial_migration, file = "clean_interprovincial_migration_step1.3.csv")
+
+interactive_table(Transit_interprovincial_migration)
+
+```
+
+```{r contribution of population growth formatting}
+
+Transit_population %>%
+  select(ref_year, geo, value_fd) %>%
+  rename(total_population_growth = value_fd) ->
+  #mutate(across(where(is.character), as.factor)) ->
+  #mutate(across(where(is.factor), as.character)) ->
+  contribution_population_growth1
+
+
+Transit_international_migration %>% 
+  select(ref_year, geo, value, components_of_population_growth) ->
+  contribution_population_growth2
+as_tibble(contribution_population_growth2) %>%
+  pivot_wider(names_from = components_of_population_growth, values_from = c(`value`)) ->
+  contribution_population_growth2
+contribution_population_growth2 <- janitor::clean_names(contribution_population_growth2)
+
+
+Transit_interprovincial_migration %>%
+  select(ref_year, geo, value, interprovincial_migration) ->
+  contribution_population_growth3
+as_tibble(contribution_population_growth3) %>%
+  pivot_wider(names_from = interprovincial_migration, values_from = c(`value`)) ->
+  contribution_population_growth3
+contribution_population_growth3 <- janitor::clean_names(contribution_population_growth3)
+contribution_population_growth3 %>%
+  mutate(net_migrants = in_migrants - out_migrants) %>%
+  select(ref_year, geo, net_migrants) %>%
+  rename(net_interprovincial_migrants = net_migrants)->
+contribution_population_growth3
+  
+contribution_population_growth <- cbind(as_tibble(contribution_population_growth1), as_tibble(contribution_population_growth2), as_tibble(contribution_population_growth3))
+
+contribution_population_growth <- contribution_population_growth[, !duplicated(colnames(contribution_population_growth))]
+
+contribution_population_growth %>%
+  mutate(net_interprovincial_migrants_CPC = net_interprovincial_migrants/total_population_growth) %>%
+  mutate(emigrants_CPC = emigrants/total_population_growth) %>%
+  mutate(immigrants_CPC = immigrants/total_population_growth) %>%
+  mutate(other = total_population_growth - net_interprovincial_migrants - emigrants - immigrants) %>%
+  mutate(other_CPC = other/total_population_growth) %>%
+  mutate(across(where(is.numeric), round, 3)) ->
+  contribution_population_growth
+
+write.csv(contribution_population_growth, file = "clean_contribution_population_growth_step1.3.csv")
+
+interactive_table(contribution_population_growth)
+
+  
+```
+
+
+
+
+
+# Housing price index Step 2.1
+
+```{r database for housing price index,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+#step 2.1
+
+housing_price_index <- cansim::get_cansim(housing_price_index_table_number)
+housing_price_index <- janitor::clean_names(housing_price_index) # get rid of capital letters in col names
+
+```
+
+```{r housing price index formatting}
+
+housing_price_index %>%
+  select(ref_date, geo, new_housing_price_indexes, value) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(geo %in% c(provinces)) %>%
+  filter(new_housing_price_indexes %in% c("House only", "Land only")) %>% #only keep said value
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_housing_price_index
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_housing_price_index_tsbl <- 
+  as_tsibble(clean_housing_price_index, key = c(geo, new_housing_price_indexes))
+data_housing_price_index_tsbl %>%
+  group_by_key() %>% 
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = mean(`value`, na.rm = TRUE)
+  ) -> clean_housing_price_index
+
+
+clean_housing_price_index %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, new_housing_price_indexes) %>% #order the data by factors
+  group_by(new_housing_price_indexes, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_housing_price_index
+
+#as_tibble(Transit_housing_price_index) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_housing_price_index
+
+write.csv(Transit_housing_price_index, file = "clean_housing_price_index_step2.1.csv")
+
+interactive_table(Transit_housing_price_index)
+
+```
+
+
+
+# Central Bank interest rate Step 2.1
+
+```{r database for central bank interest rate,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+#step 2.1
+
+Central_Bank_interest_rate <- cansim::get_cansim(Central_Bank_interest_rate_table_number)
+Central_Bank_interest_rate <- janitor::clean_names(Central_Bank_interest_rate) # get rid of capital letters in col names
+
+```
+
+```{r Central bank interest rate formatting}
+
+#unique(Central_Bank_interest_rate$financial_market_statistics)
+
+Central_Bank_interest_rate %>%
+  select(ref_date, financial_market_statistics, value) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  filter(financial_market_statistics %in% c("Target rate", "Real return benchmark bond yield, long term")) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m-%d")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_Central_Bank_interest_rate
+
+write.csv(clean_Central_Bank_interest_rate, file = "clean_Central_Bank_interest_rate_step2.1.csv")
+
+interactive_table(clean_Central_Bank_interest_rate)
+
+```
+
+# Labour force monthly (x1,000) Step 3.1
+
+```{r database for labour force monthly,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+labour_force_monthly <- cansim::get_cansim(labour_force_monthly_table_number)
+labour_force_monthly <- janitor::clean_names(labour_force_monthly) # get rid of capital letters in col names
+
+```
+
+
+```{r labour force monthly formatting}
+
+
+labour_force_monthly %>%
+  select(ref_date, geo, value, labour_force_characteristics, sex, age_group) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(sex %in% c("Both sexes")) %>%
+  select(! sex) %>%
+  filter(age_group %in% c("15 years and over")) %>%
+  select(! age_group) %>%
+  filter(labour_force_characteristics %in% c("Labour force", "Participation rate")) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_labour_force_monthly
+
+
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_labour_force_monthly_tsbl <- 
+  as_tsibble(clean_labour_force_monthly, key = c(geo, labour_force_characteristics))
+data_labour_force_monthly_tsbl %>%
+  group_by_key() %>%
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = if_else(first(labour_force_characteristics == "Labour force")
+      , sum(`value`, na.rm = TRUE)
+      , mean(`value`, na.rm = TRUE))
+  ) -> clean_labour_force_monthly
+
+
+
+clean_labour_force_monthly %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, labour_force_characteristics) %>% #order the data by factors
+  group_by(labour_force_characteristics, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_labour_force_monthly
+
+#as_tibble(Transit_labour_force_monthly) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_labour_force_monthly
+
+
+write.csv(Transit_labour_force_monthly, file = "clean_labour_force_monthly_step3.1.csv")
+
+interactive_table(Transit_labour_force_monthly)
+
+```
+
+
+# Labour productivity Step 3.2
+
+```{r database for labour productivity,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+labour_productivity <- cansim::get_cansim(labour_productivity_table_number)
+labour_productivity <- janitor::clean_names(labour_productivity) # get rid of capital letters in col names
+
+```
+
+```{r labour productivity formatting}
+
+labour_productivity %>%
+  select(ref_date, geo, value, labour_productivity_and_related_measures, industry) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(industry %in% c("All industries")) %>%
+  select(! industry) %>%
+  filter(labour_productivity_and_related_measures %in% c("Labour productivity")) %>%
+  select(! labour_productivity_and_related_measures) %>%
+  distinct() %>%
+  rename_if(is.numeric, funs(str_c("labour_productivity"))) ->
+clean_labour_productivity
+
+clean_labour_productivity %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo) %>% #order the data by factors
+  group_by(geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_labour_productivity
+
+#this function turn NA to 0 in order to run the power BI value as numbers.
+Transit_labour_productivity[is.na(Transit_labour_productivity)] <- 0
+ 
+
+#as_tibble(Transit_labour_productivity) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`labour_productivity`, `labour_productivity_fd`, `labour_productivity_pc`)) %>%
+  #select(!str_c("labour_productivity_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("labour_productivity_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_labour_productivity
+
+write.csv(Transit_labour_productivity, file = "clean_labour_productivity_step3.2.csv")
+
+interactive_table(Transit_labour_productivity)
+
+```
+
+# employment per industry annual Step 3.3
+
+```{r database for employment per industry annual,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+employment_industry_annual <- cansim::get_cansim(employment_industry_annual_table_number)
+employment_industry_annual <- janitor::clean_names(employment_industry_annual) # get rid of capital letters in col names
+
+```
+
+```{r employment per industry formatting}
+
+employment_industry_annual %>%
+  select(ref_date, geo, value, classification_code_for_north_american_industry_classification_system_naics, type_of_employee, north_american_industry_classification_system_naics) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(type_of_employee %in% c("All employees")) %>%
+  select(! type_of_employee) %>%
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+  select(! classification_code_for_north_american_industry_classification_system_naics) %>%
+  distinct() ->
+clean_employment_industry_annual
+
+clean_employment_industry_annual %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, north_american_industry_classification_system_naics) %>% #order the data by factors
+  group_by(north_american_industry_classification_system_naics, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_employment_industry_annual
+
+#as_tibble(Transit_employment_industry_annual) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_employment_industry_annual
+
+
+write.csv(Transit_employment_industry_annual, file = "clean_employment_industry_annual_step3.3.csv")
+
+interactive_table(Transit_employment_industry_annual)
+
+
+```
+
+# supplementary unemployment Step 3.4
+
+```{r database for supplementary unemployment,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+supplementary_unemployment <- cansim::get_cansim(supplementary_unemployment_table_number)
+supplementary_unemployment <- janitor::clean_names(supplementary_unemployment) # get rid of capital letters in col names
+
+```
+
+```{r supplementary unemployment formatting}
+
+supplementary_unemployment %>%
+  select(ref_date, geo, value, supplementary_unemployment_rates, sex, age_group) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(supplementary_unemployment_rates %in% c("R4 - official rate", "R8 - plus discouraged searchers, waiting group, portion of involuntary part-timers")) %>%
+  filter(sex %in% c("Both sexes")) %>%
+  select(! sex) %>%
+  filter(age_group %in% c("15 years and over")) %>%
+  select(! age_group) %>%
+  distinct() ->
+clean_supplementary_unemployment
+
+clean_supplementary_unemployment %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, supplementary_unemployment_rates) %>% #order the data by factors
+  group_by(supplementary_unemployment_rates, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_supplementary_unemployment
+
+#as_tibble(Transit_supplementary_unemployment) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_supplementary_unemployment
+
+
+write.csv(Transit_supplementary_unemployment, file = "clean_supplementary_unemployment_step3.4.csv")
+
+interactive_table(Transit_supplementary_unemployment)
+
+
+```
+
+# duration of unemployment monthly Step 3.5
+
+```{r database for duration of unemployment,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+#Database too large ; cannot allocate vector of size 54.3 Mb
+# duration_unemployment <- cansim::get_cansim(duration_unemployment_table_number)
+# duration_unemployment <- janitor::clean_names(duration_unemployment) # get rid of capital letters in col names
+
+#Let's use the vector alternative.
+
+duration_unemployment_Cbind <- read.csv(file="Vector_metadata_average_week_unemployed.csv", header = TRUE) # if the code doesn't work, you can always use : read.csv(file.choose(), header = TRUE) Choose ConstructionPermitsCbind.csv
+head(duration_unemployment_Cbind)
+duration_unemployment_Cbind <-as.data.frame(duration_unemployment_Cbind)
+duration_unemployment_Cbind <- janitor::clean_names(duration_unemployment_Cbind)
+duration_unemployment_Cbind %>%
+  select(geo, duration_of_unemployment, age_group, sex, statistics, data_type,  scalar_factor, vector, coordinate) %>%
+  distinct() -> #get rid of dupplicates
+    duration_unemployment_Cbind
+
+#first we create the list of vectors to be used
+DUC1 <- duration_unemployment_Cbind$vector[1:10]
+DUC2 <- duration_unemployment_Cbind$vector[11:20]
+DUC3 <- duration_unemployment_Cbind$vector[21:30]
+DUC4 <- duration_unemployment_Cbind$vector[31:40]
+DUC5 <- duration_unemployment_Cbind$vector[41:44]
+
+#then we seek the cansim vector based on the lists
+DUV1 <- cansim::get_cansim_vector_for_latest_periods(DUC1, periods = 200)
+DUV2 <- cansim::get_cansim_vector_for_latest_periods(DUC2, periods = 200)
+DUV3 <- cansim::get_cansim_vector_for_latest_periods(DUC3, periods = 200)
+DUV4 <- cansim::get_cansim_vector_for_latest_periods(DUC4, periods = 200)
+DUV5 <- cansim::get_cansim_vector_for_latest_periods(DUC5, periods = 200)
+
+#row bind the vectors into a data table
+DUVX <- rbind(DUV1, DUV2, DUV3, DUV4, DUV5)
+DUVX <- janitor::clean_names(DUVX) #remove capital letters in column names
+
+duration_unemployment_merging <- merge(duration_unemployment_Cbind, DUVX, by = "vector")
+duration_unemployment_merging[order(as.Date(duration_unemployment_merging$ref_date, format="%y-%m-%d")),]
+duration_unemployment <- janitor::clean_names(duration_unemployment_merging) #remove capital letters
+
+
+```
+
+```{r duration of unemployment formatting}
+
+
+duration_unemployment %>%
+  select(ref_date, geo, value, statistics, data_type) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  filter(data_type %in% c("Unadjusted")) %>%
+  select(! data_type) %>%
+  filter(statistics %in% c("Estimate")) %>%
+  select(! statistics) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m-%d")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_duration_unemployment
+
+
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+#data_duration_unemployment_tsbl <- 
+ # as_tsibble(clean_duration_unemployment, key = c(geo))
+#data_duration_unemployment_tsbl %>%
+ # group_by_key() %>%
+  #index_by(ref_year = ~ year(.)) %>%
+  #summarise(
+   # 'value' = mean(`value`, na.rm = TRUE)
+  #) -> clean_duration_unemployment
+
+
+
+#clean_duration_unemployment %>%
+ #  mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  #arrange(ref_year, geo) %>% #order the data by factors
+  #group_by(geo) %>% #group the data by factors other than ref_date
+  #mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   #mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    #select(order(colnames(.))) %>% #order the columns by alphabetics names
+  #relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  #relocate(`ref_year`)  %>% #place ref_year as first column
+  #mutate(across(where(is.factor), as.character)) %>%
+  #filter(ref_year > from_this_year) %>%
+  #filter(ref_year < up_to_this_year) %>%
+  #mutate(across(where(is.character), as.factor)) %>%
+  #select(!ref_year_fd) %>% #get rid of useless columns
+  #select(!ref_year_pc) -> #get rid of useless columns
+#Transit_duration_unemployment
+
+
+write.csv(clean_duration_unemployment, file = "clean_duration_unemployment_step3.5.csv")
+
+interactive_table(clean_duration_unemployment)
+
+```
+
+# employment insurance beneficiaries Step 3.6
+
+```{r database for employment insurance beneficiaries,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+employment_insurance_beneficiaries <- cansim::get_cansim(employment_insurance_beneficiaries_table_number)
+employment_insurance_beneficiaries <- janitor::clean_names(employment_insurance_beneficiaries) # get rid of capital letters in col names
+
+```
+
+```{r employment insurance beneficiaries formatting}
+
+
+employment_insurance_beneficiaries %>%
+  select(ref_date, geo, value, beneficiary_detail, sex, age_group) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(sex %in% c("Both sexes")) %>%
+  select(! sex) %>%
+  filter(age_group %in% c("15 years and over")) %>%
+  select(! age_group) %>%
+  filter(beneficiary_detail %in% c("Regular benefits")) %>%
+  select(! beneficiary_detail) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+   distinct() ->
+clean_employment_insurance_beneficiaries
+
+
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_employment_insurance_beneficiaries_tsbl <- 
+  as_tsibble(clean_employment_insurance_beneficiaries, key = c(geo))
+data_employment_insurance_beneficiaries_tsbl %>%
+  group_by_key() %>%
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_employment_insurance_beneficiaries
+
+
+
+clean_employment_insurance_beneficiaries %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo) %>% #order the data by factors
+  group_by(geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_employment_insurance_beneficiaries
+
+#this function turn NA to 0 in order to run the power BI value as numbers.
+Transit_employment_insurance_beneficiaries[is.na(Transit_employment_insurance_beneficiaries)] <- 0
+
+#as_tibble(Transit_employment_insurance_beneficiaries) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_employment_insurance_beneficiaries
+
+
+write.csv(Transit_employment_insurance_beneficiaries, file = "clean_employment_insurance_beneficiaries_step3.6.csv")
+
+interactive_table(Transit_employment_insurance_beneficiaries)
+
+```
+
+
+
+
+# consumer price index Step 4.1
+
+```{r database for consumer price index,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+consumer_price_index <- cansim::get_cansim(consumer_price_index_table_number)
+consumer_price_index <- janitor::clean_names(consumer_price_index) # get rid of capital letters in col names
+
+```
+
+```{r consumer price index formatting}
+
+consumer_price_index %>%
+  select(ref_date, geo, value, products_and_product_groups) %>%
+  #filter(ref_date > from_this_year) %>%
+  filter(products_and_product_groups %in% c("All-items", "Food", "Shelter")) %>%
+  distinct() ->
+clean_consumer_price_index
+
+clean_consumer_price_index %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, products_and_product_groups) %>% #order the data by factors
+  group_by(products_and_product_groups, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_consumer_price_index
+
+#as_tibble(Transit_consumer_price_index) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_consumer_price_index
+
+
+write.csv(Transit_consumer_price_index, file = "clean_consumer_price_index_step4.1.csv")
+
+interactive_table(Transit_consumer_price_index)
+
+
+```
+
+# average weekly earning Step 4.2
+
+```{r database for average weekly earning,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+average_weekly_earning <- cansim::get_cansim(average_weekly_earning_table_number)
+average_weekly_earning <- janitor::clean_names(average_weekly_earning) # get rid of capital letters in col names
+
+```
+
+```{r average weekly earning formatting}
+
+average_weekly_earning %>%
+  select(ref_date, geo, value, classification_code_for_north_american_industry_classification_system_naics, type_of_employees, overtime, north_american_industry_classification_system_naics) %>%
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+  select(! classification_code_for_north_american_industry_classification_system_naics) %>%
+  filter(type_of_employees %in% c("All employees")) %>%
+  select(! type_of_employees) %>%
+  filter(overtime %in% c("Excluding overtime")) %>%
+  select(! overtime) %>%
+  #filter(ref_date > from_this_year) %>%
+  distinct() ->
+clean_average_weekly_earning
+
+clean_average_weekly_earning %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, north_american_industry_classification_system_naics) %>% #order the data by factors
+  group_by(north_american_industry_classification_system_naics, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_average_weekly_earning
+
+#this function turn NA to 0 in order to run the power BI value as numbers.
+Transit_average_weekly_earning[is.na(Transit_average_weekly_earning)] <- 0
+
+
+#as_tibble(Transit_average_weekly_earning) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_average_weekly_earning
+
+
+write.csv(Transit_average_weekly_earning, file = "clean_average_weekly_earning_step4.2.csv")
+
+interactive_table(Transit_average_weekly_earning)
+
+
+```
+
+# average remaining life of infrastructure Step 5.1
+
+```{r database for average remaining life of infrastructure,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+average_remaining_life_of_infrastructure <- cansim::get_cansim(average_remaining_life_of_infrastructure_table_number)
+average_remaining_life_of_infrastructure <- janitor::clean_names(average_remaining_life_of_infrastructure) # get rid of capital letters in col names
+
+```
+
+```{r average average remaining life of infrastructure formatting}
+
+average_remaining_life_of_infrastructure %>%
+  select(ref_date, geo, value, estimate, asset, asset_function) %>%
+  filter(asset %in% c("Total assets")) %>%
+  select(! asset) %>%
+  filter(asset_function %in% c("All functions")) %>%
+  select(! asset_function) %>%
+  #filter(ref_date > from_this_year) %>%
+  distinct() ->
+clean_average_remaining_life_of_infrastructure
+
+clean_average_remaining_life_of_infrastructure %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, estimate) %>% #order the data by factors
+  group_by(estimate, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_average_remaining_life_of_infrastructure
+
+#as_tibble(Transit_average_remaining_life_of_infrastructure) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_average_remaining_life_of_infrastructure
+
+
+write.csv(Transit_average_remaining_life_of_infrastructure, file = "clean_average_remaining_life_of_infrastructure_step5.1.csv")
+
+interactive_table(Transit_average_remaining_life_of_infrastructure)
+
+
+```
+
+# electric power generation Step 5.2
+
+```{r database for electric power generation,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+electric_power_generation <- cansim::get_cansim(electric_power_generation_table_number)
+electric_power_generation <- janitor::clean_names(electric_power_generation) # get rid of capital letters in col names
+
+```
+
+
+```{r electric power generation formatting}
+
+electric_power_generation %>%
+  select(ref_date, geo, value, class_of_electricity_producer, type_of_electricity_generation) %>%
+  filter(class_of_electricity_producer %in% c("Total all classes of electricity producer")) %>%
+  select(! class_of_electricity_producer) %>%
+  filter(type_of_electricity_generation %in% c("Total all types of electricity generation", "Total electricity production from combustible fuels")) %>%
+  #filter(ref_date > from_this_year) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+  distinct() ->
+clean_electric_power_generation
+
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_electric_power_generation_tsbl <- 
+  as_tsibble(clean_electric_power_generation, key = c(geo, type_of_electricity_generation))
+data_electric_power_generation_tsbl %>%
+  group_by_key() %>%
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_electric_power_generation
+
+
+clean_electric_power_generation %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, type_of_electricity_generation) %>% #order the data by factors
+  group_by(type_of_electricity_generation, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_electric_power_generation
+
+#as_tibble(Transit_electric_power_generation) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_electric_power_generation
+
+
+write.csv(Transit_electric_power_generation, file = "clean_electric_power_generation_step5.2.csv")
+
+interactive_table(Transit_electric_power_generation)
+
+
+```
+
+# petroleum product Step 5.2
+
+```{r database for petroleum product,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+petroleum_product <- cansim::get_cansim(petroleum_product_table_number)
+petroleum_product <- janitor::clean_names(petroleum_product) # get rid of capital letters in col names
+
+```
+
+
+```{r petroleum product formatting}
+
+
+petroleum_product %>%
+  select(ref_date, geo, value, supply_and_disposition, products) %>%
+  filter(supply_and_disposition %in% c("Refinery and blender net production, supply", "Imports, supply")) %>%
+  filter(products %in% c("Finished petroleum products", "Natural gas liquids")) %>%
+  #filter(ref_date > from_this_year) %>%
+  mutate(ref_date = parse_date(ref_date, "%Y-%m")) %>% #turn format from : year  to date format
+  distinct() ->
+clean_petroleum_product
+
+
+#these two function are to fuse monthly value into yearly value bases on key columns
+data_petroleum_product_tsbl <- 
+  as_tsibble(clean_petroleum_product, key = c(geo, supply_and_disposition, products))
+data_petroleum_product_tsbl %>%
+  group_by_key() %>%
+  index_by(ref_year = ~ year(.)) %>%
+  summarise(
+    'value' = sum(`value`, na.rm = TRUE)
+  ) -> clean_petroleum_product
+
+
+clean_petroleum_product %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_year, geo, supply_and_disposition, products) %>% #order the data by factors
+  group_by(supply_and_disposition, products, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_year`)  %>% #place ref_year as first column
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_year > from_this_year) %>%
+  filter(ref_year < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(!ref_year_fd) %>% #get rid of useless columns
+  select(!ref_year_pc) -> #get rid of useless columns
+Transit_petroleum_product
+
+#as_tibble(Transit_petroleum_product) %>%
+  #pivot_wider(names_from = ref_year, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_fd_", Incomplete_Year2)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year2)) -> #get rid of useless columns
+#clean_petroleum_product
+
+
+write.csv(Transit_petroleum_product, file = "clean_petroleum_product_step5.2.csv")
+
+interactive_table(Transit_petroleum_product)
+
+
+```
+
+# ability of business to take more debt Step 6.1
+
+```{r database for ability of business to take more debt,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+
+ability_of_business_to_take_more_debt <- cansim::get_cansim(ability_of_business_to_take_more_debt_table_number)
+ability_of_business_to_take_more_debt <- janitor::clean_names(ability_of_business_to_take_more_debt) # get rid of capital letters in col names
+
+```
+
+
+```{r ability of business to take more debt of infrastructure formatting}
+
+
+ability_of_business_to_take_more_debt %>%
+  select(ref_date, geo, value, classification_code_for_business_characteristics, business_characteristics, business_or_organization_ability_to_take_on_more_debt) %>%
+  filter(classification_code_for_business_characteristics %in% c(two_digit_naics_code)) %>%
+  select(! classification_code_for_business_characteristics) %>%
+  filter(business_or_organization_ability_to_take_on_more_debt %in% c("Business or organization ability to take on more debt, unknown")) %>%
+  select(! business_or_organization_ability_to_take_on_more_debt) %>%
+  #filter(ref_date > from_this_year) %>%
+  distinct() ->
+clean_ability_of_business_to_take_more_debt
+
+#this function turn NA to 0 in order to run the power BI value as numbers.
+clean_ability_of_business_to_take_more_debt[is.na(clean_ability_of_business_to_take_more_debt)] <- 0
+
+
+write.csv(clean_ability_of_business_to_take_more_debt, file = "clean_ability_of_business_to_take_more_debt_step6.1.csv")
+
+interactive_table(clean_ability_of_business_to_take_more_debt)
+
+
+```
+
+# trade in good by industry Step 6.2
+
+```{r database for trade in good by industry,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+trade_in_good_by_industry <- cansim::get_cansim(trade_in_good_by_industry_table_number)
+trade_in_good_by_industry <- janitor::clean_names(trade_in_good_by_industry) # get rid of capital letters in col names
+
+```
+
+```{r trade in good by industry of infrastructure formatting}
+
+
+trade_in_good_by_industry %>%
+  select(ref_date, geo, value, classification_code_for_north_american_industry_classification_system_naics, estimates, north_american_industry_classification_system_naics) %>%
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+  select(! classification_code_for_north_american_industry_classification_system_naics) %>%
+  filter(estimates %in% c("Value of exports")) %>%
+  select(! estimates) %>%
+  #filter(ref_date > from_this_year) %>%
+  distinct() ->
+clean_trade_in_good_by_industry
+
+
+clean_trade_in_good_by_industry %>%
+   mutate(across(where(is.character), as.factor)) %>% #turn the charater into factor and keep the factor as factor.
+  arrange(ref_date, geo, north_american_industry_classification_system_naics) %>% #order the data by factors
+  group_by(north_american_industry_classification_system_naics, geo) %>% #group the data by factors other than ref_date
+  mutate(across(where(is.numeric), fd_pc, .names = "{.col}_{.fn}")) %>% #create two columns based on the fd_pc function
+   mutate(across(where(is.numeric), round, 3)) %>% #set to 3 decimals
+    select(order(colnames(.))) %>% #order the columns by alphabetics names
+  relocate(where(is.numeric), .after = where((is.factor))) %>% #place numeric columns after factors columns
+  relocate(`ref_date`)  %>%
+  mutate(across(where(is.factor), as.character)) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(ref_date < up_to_this_year) %>%
+  mutate(across(where(is.character), as.factor)) -> #place ref_year as first column
+Transit_trade_in_good_by_industry
+
+#this function turn NA to 0 in order to run the power BI value as numbers.
+Transit_trade_in_good_by_industry[is.na(Transit_trade_in_good_by_industry)] <- 0
+
+#as_tibble(Transit_trade_in_good_by_industry) %>%
+  #pivot_wider(names_from = ref_date, values_from = c(`value`, `value_fd`, `value_pc`)) %>%
+  #select(!str_c("value_fd_", Incomplete_Year1)) %>% #get rid of useless columns
+  #select(!str_c("value_pc_", Incomplete_Year1)) -> #get rid of useless columns
+#clean_trade_in_good_by_industry
+
+
+write.csv(Transit_trade_in_good_by_industry, file = "clean_trade_in_good_by_industry_step6.2.csv")
+
+interactive_table(Transit_trade_in_good_by_industry)
+
+
+```
+
+

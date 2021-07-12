@@ -1,0 +1,243 @@
+"","ref_year","geo","new_housing_price_indexes","value","value_fd","value_pc"
+"1",2010,"Alberta","House only",93.233,2.05,2.248
+"2",2010,"Alberta","Land only",91.133,-2.775,-2.955
+"3",2010,"British Columbia","House only",96,4.758,5.215
+"4",2010,"British Columbia","Land only",99.517,-0.517,-0.516
+"5",2010,"Canada","House only",86.258,2.817,3.376
+"6",2010,"Canada","Land only",91.308,-0.317,-0.346
+"7",2010,"Manitoba","House only",82,3.033,3.841
+"8",2010,"Manitoba","Land only",83.175,5.258,6.749
+"9",2010,"New Brunswick","House only",98.458,1.367,1.408
+"10",2010,"New Brunswick","Land only",95,1.692,1.813
+"11",2010,"Newfoundland and Labrador","House only",94.75,4.208,4.648
+"12",2010,"Newfoundland and Labrador","Land only",88.817,7.283,8.933
+"13",2010,"Nova Scotia","House only",91.017,0.9,0.999
+"14",2010,"Nova Scotia","Land only",95,0.6,0.636
+"15",2010,"Ontario","House only",76.942,3.017,4.081
+"16",2010,"Ontario","Land only",89.342,-0.933,-1.034
+"17",2010,"Prince Edward Island","House only",99.525,-2.208,-2.171
+"18",2010,"Prince Edward Island","Land only",92,0.617,0.675
+"19",2010,"Quebec","House only",94.492,1.933,2.089
+"20",2010,"Quebec","Land only",91.583,5.033,5.816
+"21",2010,"Saskatchewan","House only",95.525,2.558,2.752
+"22",2010,"Saskatchewan","Land only",86.392,6.525,8.17
+"23",2011,"Alberta","House only",92.8,-0.433,-0.465
+"24",2011,"Alberta","Land only",92.983,1.85,2.03
+"25",2011,"British Columbia","House only",95.742,-0.258,-0.269
+"26",2011,"British Columbia","Land only",99,-0.517,-0.519
+"27",2011,"Canada","House only",88.308,2.05,2.377
+"28",2011,"Canada","Land only",92.817,1.508,1.652
+"29",2011,"Manitoba","House only",86.475,4.475,5.457
+"30",2011,"Manitoba","Land only",86.042,2.867,3.447
+"31",2011,"New Brunswick","House only",98.783,0.325,0.33
+"32",2011,"New Brunswick","Land only",97,2,2.105
+"33",2011,"Newfoundland and Labrador","House only",97.667,2.917,3.078
+"34",2011,"Newfoundland and Labrador","Land only",94.7,5.883,6.624
+"35",2011,"Nova Scotia","House only",92.467,1.45,1.593
+"36",2011,"Nova Scotia","Land only",96.6,1.6,1.684
+"37",2011,"Ontario","House only",80.575,3.633,4.722
+"38",2011,"Ontario","Land only",90.308,0.967,1.082
+"39",2011,"Prince Edward Island","House only",101.133,1.608,1.616
+"40",2011,"Prince Edward Island","Land only",94.142,2.142,2.328
+"41",2011,"Quebec","House only",95.942,1.45,1.535
+"42",2011,"Quebec","Land only",96.333,4.75,5.187
+"43",2011,"Saskatchewan","House only",97.9,2.375,2.486
+"44",2011,"Saskatchewan","Land only",89.942,3.55,4.109
+"45",2012,"Alberta","House only",94.2,1.4,1.509
+"46",2012,"Alberta","Land only",93.842,0.858,0.923
+"47",2012,"British Columbia","House only",94.308,-1.433,-1.497
+"48",2012,"British Columbia","Land only",99.242,0.242,0.244
+"49",2012,"Canada","House only",90.625,2.317,2.623
+"50",2012,"Canada","Land only",94.458,1.642,1.769
+"51",2012,"Manitoba","House only",89.933,3.458,3.999
+"52",2012,"Manitoba","Land only",90.092,4.05,4.707
+"53",2012,"New Brunswick","House only",98.017,-0.767,-0.776
+"54",2012,"New Brunswick","Land only",99.275,2.275,2.345
+"55",2012,"Newfoundland and Labrador","House only",97.767,0.1,0.102
+"56",2012,"Newfoundland and Labrador","Land only",95.242,0.542,0.572
+"57",2012,"Nova Scotia","House only",95.058,2.592,2.803
+"58",2012,"Nova Scotia","Land only",96.792,0.192,0.198
+"59",2012,"Ontario","House only",84.533,3.958,4.913
+"60",2012,"Ontario","Land only",92.6,2.292,2.538
+"61",2012,"Prince Edward Island","House only",101.125,-0.008,-0.008
+"62",2012,"Prince Edward Island","Land only",95.708,1.567,1.664
+"63",2012,"Quebec","House only",97.367,1.425,1.485
+"64",2012,"Quebec","Land only",98.175,1.842,1.912
+"65",2012,"Saskatchewan","House only",100.392,2.492,2.545
+"66",2012,"Saskatchewan","Land only",94.083,4.142,4.605
+"67",2013,"Alberta","House only",97.45,3.25,3.45
+"68",2013,"Alberta","Land only",95.258,1.417,1.51
+"69",2013,"British Columbia","House only",92.733,-1.575,-1.67
+"70",2013,"British Columbia","Land only",99.267,0.025,0.025
+"71",2013,"Canada","House only",92.492,1.867,2.06
+"72",2013,"Canada","Land only",95.492,1.033,1.094
+"73",2013,"Manitoba","House only",93.592,3.658,4.068
+"74",2013,"Manitoba","Land only",96.292,6.2,6.882
+"75",2013,"New Brunswick","House only",98.117,0.1,0.102
+"76",2013,"New Brunswick","Land only",100,0.725,0.73
+"77",2013,"Newfoundland and Labrador","House only",99.433,1.667,1.705
+"78",2013,"Newfoundland and Labrador","Land only",97.158,1.917,2.012
+"79",2013,"Nova Scotia","House only",97.792,2.733,2.875
+"80",2013,"Nova Scotia","Land only",98.133,1.342,1.386
+"81",2013,"Ontario","House only",86.625,2.092,2.474
+"82",2013,"Ontario","Land only",93.592,0.992,1.071
+"83",2013,"Prince Edward Island","House only",101.592,0.467,0.461
+"84",2013,"Prince Edward Island","Land only",96.492,0.783,0.818
+"85",2013,"Quebec","House only",98.55,1.183,1.215
+"86",2013,"Quebec","Land only",98.517,0.342,0.348
+"87",2013,"Saskatchewan","House only",102.05,1.658,1.652
+"88",2013,"Saskatchewan","Land only",96.758,2.675,2.843
+"89",2014,"Alberta","House only",101.308,3.858,3.959
+"90",2014,"Alberta","Land only",97.4,2.142,2.248
+"91",2014,"British Columbia","House only",91.15,-1.583,-1.707
+"92",2014,"British Columbia","Land only",99.2,-0.067,-0.067
+"93",2014,"Canada","House only",94.233,1.742,1.883
+"94",2014,"Canada","Land only",96.4,0.908,0.951
+"95",2014,"Manitoba","House only",95.025,1.433,1.531
+"96",2014,"Manitoba","Land only",98.05,1.758,1.826
+"97",2014,"New Brunswick","House only",97.983,-0.133,-0.136
+"98",2014,"New Brunswick","Land only",100,0,0
+"99",2014,"Newfoundland and Labrador","House only",100.092,0.658,0.662
+"100",2014,"Newfoundland and Labrador","Land only",98.6,1.442,1.484
+"101",2014,"Nova Scotia","House only",98.15,0.358,0.366
+"102",2014,"Nova Scotia","Land only",98.367,0.233,0.238
+"103",2014,"Ontario","House only",88.608,1.983,2.29
+"104",2014,"Ontario","Land only",94.008,0.417,0.445
+"105",2014,"Prince Edward Island","House only",100.008,-1.583,-1.559
+"106",2014,"Prince Edward Island","Land only",97.392,0.9,0.933
+"107",2014,"Quebec","House only",98.825,0.275,0.279
+"108",2014,"Quebec","Land only",98.908,0.392,0.398
+"109",2014,"Saskatchewan","House only",103.958,1.908,1.87
+"110",2014,"Saskatchewan","Land only",98.742,1.983,2.05
+"111",2015,"Alberta","House only",101.583,0.275,0.271
+"112",2015,"Alberta","Land only",98.917,1.517,1.557
+"113",2015,"British Columbia","House only",92.483,1.333,1.463
+"114",2015,"British Columbia","Land only",99.2,0,0
+"115",2015,"Canada","House only",95.55,1.317,1.397
+"116",2015,"Canada","Land only",97.633,1.233,1.279
+"117",2015,"Manitoba","House only",96.208,1.183,1.245
+"118",2015,"Manitoba","Land only",99.008,0.958,0.977
+"119",2015,"New Brunswick","House only",97.817,-0.167,-0.17
+"120",2015,"New Brunswick","Land only",100,0,0
+"121",2015,"Newfoundland and Labrador","House only",100.183,0.092,0.092
+"122",2015,"Newfoundland and Labrador","Land only",99.25,0.65,0.659
+"123",2015,"Nova Scotia","House only",98.875,0.725,0.739
+"124",2015,"Nova Scotia","Land only",99.233,0.867,0.881
+"125",2015,"Ontario","House only",91.167,2.558,2.887
+"126",2015,"Ontario","Land only",95.75,1.742,1.853
+"127",2015,"Prince Edward Island","House only",99.783,-0.225,-0.225
+"128",2015,"Prince Edward Island","Land only",99.092,1.7,1.746
+"129",2015,"Quebec","House only",98.892,0.067,0.067
+"130",2015,"Quebec","Land only",99.358,0.45,0.455
+"131",2015,"Saskatchewan","House only",102.775,-1.183,-1.138
+"132",2015,"Saskatchewan","Land only",98.983,0.242,0.245
+"133",2016,"Alberta","House only",100.492,-1.092,-1.075
+"134",2016,"Alberta","Land only",99.492,0.575,0.581
+"135",2016,"British Columbia","House only",98.617,6.133,6.632
+"136",2016,"British Columbia","Land only",99.425,0.225,0.227
+"137",2016,"Canada","House only",98.567,3.017,3.157
+"138",2016,"Canada","Land only",98.783,1.15,1.178
+"139",2016,"Manitoba","House only",98.567,2.358,2.451
+"140",2016,"Manitoba","Land only",99.633,0.625,0.631
+"141",2016,"New Brunswick","House only",98.642,0.825,0.843
+"142",2016,"New Brunswick","Land only",100,0,0
+"143",2016,"Newfoundland and Labrador","House only",100.108,-0.075,-0.075
+"144",2016,"Newfoundland and Labrador","Land only",99.975,0.725,0.73
+"145",2016,"Nova Scotia","House only",99.2,0.325,0.329
+"146",2016,"Nova Scotia","Land only",99.533,0.3,0.302
+"147",2016,"Ontario","House only",96.867,5.7,6.252
+"148",2016,"Ontario","Land only",97.8,2.05,2.141
+"149",2016,"Prince Edward Island","House only",100.067,0.283,0.284
+"150",2016,"Prince Edward Island","Land only",99.85,0.758,0.765
+"151",2016,"Quebec","House only",99.683,0.792,0.801
+"152",2016,"Quebec","Land only",99.833,0.475,0.478
+"153",2016,"Saskatchewan","House only",100.35,-2.425,-2.36
+"154",2016,"Saskatchewan","Land only",99.625,0.642,0.648
+"155",2017,"Alberta","House only",99.958,-0.533,-0.531
+"156",2017,"Alberta","Land only",100.017,0.525,0.528
+"157",2017,"British Columbia","House only",104.842,6.225,6.312
+"158",2017,"British Columbia","Land only",102.933,3.508,3.529
+"159",2017,"Canada","House only",101.95,3.383,3.433
+"160",2017,"Canada","Land only",102.683,3.9,3.948
+"161",2017,"Manitoba","House only",102.783,4.217,4.278
+"162",2017,"Manitoba","Land only",100.367,0.733,0.736
+"163",2017,"New Brunswick","House only",100.35,1.708,1.732
+"164",2017,"New Brunswick","Land only",100,0,0
+"165",2017,"Newfoundland and Labrador","House only",99.042,-1.067,-1.066
+"166",2017,"Newfoundland and Labrador","Land only",99.9,-0.075,-0.075
+"167",2017,"Nova Scotia","House only",100.742,1.542,1.554
+"168",2017,"Nova Scotia","Land only",99.925,0.392,0.394
+"169",2017,"Ontario","House only",102.65,5.783,5.97
+"170",2017,"Ontario","Land only",105.092,7.292,7.456
+"171",2017,"Prince Edward Island","House only",100.158,0.092,0.092
+"172",2017,"Prince Edward Island","Land only",100,0.15,0.15
+"173",2017,"Quebec","House only",100.667,0.983,0.986
+"174",2017,"Quebec","Land only",100.383,0.55,0.551
+"175",2017,"Saskatchewan","House only",99.542,-0.808,-0.806
+"176",2017,"Saskatchewan","Land only",99.975,0.35,0.351
+"177",2018,"Alberta","House only",99.117,-0.842,-0.842
+"178",2018,"Alberta","Land only",100.5,0.483,0.483
+"179",2018,"British Columbia","House only",108.808,3.967,3.783
+"180",2018,"British Columbia","Land only",104.783,1.85,1.797
+"181",2018,"Canada","House only",102.925,0.975,0.956
+"182",2018,"Canada","Land only",103.883,1.2,1.169
+"183",2018,"Manitoba","House only",105.167,2.383,2.319
+"184",2018,"Manitoba","Land only",101.225,0.858,0.855
+"185",2018,"New Brunswick","House only",101.133,0.783,0.781
+"186",2018,"New Brunswick","Land only",100,0,0
+"187",2018,"Newfoundland and Labrador","House only",98.242,-0.8,-0.808
+"188",2018,"Newfoundland and Labrador","Land only",99.95,0.05,0.05
+"189",2018,"Nova Scotia","House only",102.025,1.283,1.274
+"190",2018,"Nova Scotia","Land only",100.15,0.225,0.225
+"191",2018,"Ontario","House only",103.5,0.85,0.828
+"192",2018,"Ontario","Land only",106.625,1.533,1.459
+"193",2018,"Prince Edward Island","House only",100.383,0.225,0.225
+"194",2018,"Prince Edward Island","Land only",100.133,0.133,0.133
+"195",2018,"Quebec","House only",102.917,2.25,2.235
+"196",2018,"Quebec","Land only",101.442,1.058,1.054
+"197",2018,"Saskatchewan","House only",97.575,-1.967,-1.976
+"198",2018,"Saskatchewan","Land only",100.517,0.542,0.542
+"199",2019,"Alberta","House only",97.042,-2.075,-2.093
+"200",2019,"Alberta","Land only",100.308,-0.192,-0.191
+"201",2019,"British Columbia","House only",106.608,-2.2,-2.022
+"202",2019,"British Columbia","Land only",104.917,0.133,0.127
+"203",2019,"Canada","House only",102.583,-0.342,-0.332
+"204",2019,"Canada","Land only",104.183,0.3,0.289
+"205",2019,"Manitoba","House only",106.2,1.033,0.983
+"206",2019,"Manitoba","Land only",101.633,0.408,0.403
+"207",2019,"New Brunswick","House only",101.725,0.592,0.585
+"208",2019,"New Brunswick","Land only",100.25,0.25,0.25
+"209",2019,"Newfoundland and Labrador","House only",96.517,-1.725,-1.756
+"210",2019,"Newfoundland and Labrador","Land only",99.983,0.033,0.033
+"211",2019,"Nova Scotia","House only",103,0.975,0.956
+"212",2019,"Nova Scotia","Land only",100.117,-0.033,-0.033
+"213",2019,"Ontario","House only",103.792,0.292,0.282
+"214",2019,"Ontario","Land only",107.008,0.383,0.36
+"215",2019,"Prince Edward Island","House only",101.2,0.817,0.814
+"216",2019,"Prince Edward Island","Land only",100.2,0.067,0.067
+"217",2019,"Quebec","House only",106.558,3.642,3.538
+"218",2019,"Quebec","Land only",102.683,1.242,1.224
+"219",2019,"Saskatchewan","House only",94.942,-2.633,-2.699
+"220",2019,"Saskatchewan","Land only",101.067,0.55,0.547
+"221",2020,"Alberta","House only",95.392,-1.65,-1.7
+"222",2020,"Alberta","Land only",100.208,-0.1,-0.1
+"223",2020,"British Columbia","House only",107.233,0.625,0.586
+"224",2020,"British Columbia","Land only",108.008,3.092,2.947
+"225",2020,"Canada","House only",104.85,2.267,2.21
+"226",2020,"Canada","Land only",106.042,1.858,1.784
+"227",2020,"Manitoba","House only",108.35,2.15,2.024
+"228",2020,"Manitoba","Land only",103.533,1.9,1.869
+"229",2020,"New Brunswick","House only",103.642,1.917,1.884
+"230",2020,"New Brunswick","Land only",101.6,1.35,1.347
+"231",2020,"Newfoundland and Labrador","House only",97.342,0.825,0.855
+"232",2020,"Newfoundland and Labrador","Land only",99.867,-0.117,-0.117
+"233",2020,"Nova Scotia","House only",107.308,4.308,4.183
+"234",2020,"Nova Scotia","Land only",102.092,1.975,1.973
+"235",2020,"Ontario","House only",107.383,3.592,3.46
+"236",2020,"Ontario","Land only",108.6,1.592,1.487
+"237",2020,"Prince Edward Island","House only",103.958,2.758,2.726
+"238",2020,"Prince Edward Island","Land only",100.783,0.583,0.582
+"239",2020,"Quebec","House only",114.033,7.475,7.015
+"240",2020,"Quebec","Land only",106.433,3.75,3.652
+"241",2020,"Saskatchewan","House only",92.942,-2,-2.107
+"242",2020,"Saskatchewan","Land only",100.175,-0.892,-0.882
