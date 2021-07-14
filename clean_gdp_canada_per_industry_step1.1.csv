@@ -1,232 +1,232 @@
 "","ref_year","geo","north_american_industry_classification_system_naics","value","value_fd","value_pc"
-"1",2010,"Canada","All industries [T001]",19496763,661035,3.509
-"2",2010,"Canada","Agriculture, forestry, fishing and hunting [11]",376669,4848,1.304
-"3",2010,"Canada","Mining, quarrying, and oil and gas extraction [21]",1424399,126058,9.709
-"4",2010,"Canada","Utilities [22]",456721,6434,1.429
-"5",2010,"Canada","Construction [23]",1444126,109762,8.226
-"6",2010,"Canada","Manufacturing [31-33]",2092906,96409,4.829
-"7",2010,"Canada","Wholesale trade [41]",984876,68881,7.52
-"8",2010,"Canada","Retail trade [44-45]",1012165,28477,2.895
-"9",2010,"Canada","Transportation and warehousing [48-49]",814333,30001,3.825
-"10",2010,"Canada","Information and cultural industries [51]",641761,13321,2.12
-"11",2010,"Canada","Finance and insurance [52]",1196146,25484,2.177
-"12",2010,"Canada","Real estate and rental and leasing [53]",2369379,74153,3.231
-"13",2010,"Canada","Professional, scientific and technical services [54]",1077660,1969,0.183
-"14",2010,"Canada","Management of companies and enterprises [55]",135481,-5027,-3.578
-"15",2010,"Canada","Administrative and support, waste management and remediation services [56]",540372,9539,1.797
-"16",2010,"Canada","Educational services [61]",1093993,20978,1.955
-"17",2010,"Canada","Health care and social assistance [62]",1418713,20809,1.489
-"18",2010,"Canada","Arts, entertainment and recreation [71]",155461,-5064,-3.155
-"19",2010,"Canada","Accommodation and food services [72]",407653,-1380,-0.337
-"20",2010,"Canada","Other services (except public administration) [81]",400128,-3841,-0.951
-"21",2010,"Canada","Public administration [91]",1454806,39235,2.772
-"22",2011,"Canada","All industries [T001]",20139947,643184,3.299
-"23",2011,"Canada","Agriculture, forestry, fishing and hunting [11]",392064,15395,4.087
-"24",2011,"Canada","Mining, quarrying, and oil and gas extraction [21]",1523463,99064,6.955
-"25",2011,"Canada","Utilities [22]",472104,15383,3.368
-"26",2011,"Canada","Construction [23]",1500585,56459,3.91
-"27",2011,"Canada","Manufacturing [31-33]",2165518,72612,3.469
-"28",2011,"Canada","Wholesale trade [41]",1058689,73813,7.495
-"29",2011,"Canada","Retail trade [44-45]",1021510,9345,0.923
-"30",2011,"Canada","Transportation and warehousing [48-49]",845821,31488,3.867
-"31",2011,"Canada","Information and cultural industries [51]",650617,8856,1.38
-"32",2011,"Canada","Finance and insurance [52]",1236733,40587,3.393
-"33",2011,"Canada","Real estate and rental and leasing [53]",2443666,74287,3.135
-"34",2011,"Canada","Professional, scientific and technical services [54]",1130002,52342,4.857
-"35",2011,"Canada","Management of companies and enterprises [55]",137066,1585,1.17
-"36",2011,"Canada","Administrative and support, waste management and remediation services [56]",547546,7174,1.328
-"37",2011,"Canada","Educational services [61]",1103126,9133,0.835
-"38",2011,"Canada","Health care and social assistance [62]",1443493,24780,1.747
-"39",2011,"Canada","Arts, entertainment and recreation [71]",155148,-313,-0.201
-"40",2011,"Canada","Accommodation and food services [72]",416413,8760,2.149
-"41",2011,"Canada","Other services (except public administration) [81]",411875,11747,2.936
-"42",2011,"Canada","Public administration [91]",1481029,26223,1.803
-"43",2012,"Canada","All industries [T001]",20525189,385242,1.913
-"44",2012,"Canada","Agriculture, forestry, fishing and hunting [11]",397165,5101,1.301
-"45",2012,"Canada","Mining, quarrying, and oil and gas extraction [21]",1494312,-29151,-1.913
-"46",2012,"Canada","Utilities [22]",467436,-4668,-0.989
-"47",2012,"Canada","Construction [23]",1619508,118923,7.925
-"48",2012,"Canada","Manufacturing [31-33]",2197080,31562,1.457
-"49",2012,"Canada","Wholesale trade [41]",1095684,36995,3.494
-"50",2012,"Canada","Retail trade [44-45]",1026492,4982,0.488
-"51",2012,"Canada","Transportation and warehousing [48-49]",857136,11315,1.338
-"52",2012,"Canada","Information and cultural industries [51]",656124,5507,0.846
-"53",2012,"Canada","Finance and insurance [52]",1258908,22175,1.793
-"54",2012,"Canada","Real estate and rental and leasing [53]",2521200,77534,3.173
-"55",2012,"Canada","Professional, scientific and technical services [54]",1161420,31418,2.78
-"56",2012,"Canada","Management of companies and enterprises [55]",137328,262,0.191
-"57",2012,"Canada","Administrative and support, waste management and remediation services [56]",573612,26066,4.761
-"58",2012,"Canada","Educational services [61]",1124460,21334,1.934
-"59",2012,"Canada","Health care and social assistance [62]",1466004,22511,1.559
-"60",2012,"Canada","Arts, entertainment and recreation [71]",155172,24,0.015
-"61",2012,"Canada","Accommodation and food services [72]",426540,10127,2.432
-"62",2012,"Canada","Other services (except public administration) [81]",420480,8605,2.089
-"63",2012,"Canada","Public administration [91]",1469124,-11905,-0.804
-"64",2013,"Canada","All industries [T001]",21047063,521874,2.543
-"65",2013,"Canada","Agriculture, forestry, fishing and hunting [11]",465034,67869,17.088
-"66",2013,"Canada","Mining, quarrying, and oil and gas extraction [21]",1572456,78144,5.229
-"67",2013,"Canada","Utilities [22]",467964,528,0.113
-"68",2013,"Canada","Construction [23]",1689960,70452,4.35
-"69",2013,"Canada","Manufacturing [31-33]",2189884,-7196,-0.328
-"70",2013,"Canada","Wholesale trade [41]",1141956,46272,4.223
-"71",2013,"Canada","Retail trade [44-45]",1083709,57217,5.574
-"72",2013,"Canada","Transportation and warehousing [48-49]",872472,15336,1.789
-"73",2013,"Canada","Information and cultural industries [51]",652536,-3588,-0.547
-"74",2013,"Canada","Finance and insurance [52]",1305036,46128,3.664
-"75",2013,"Canada","Real estate and rental and leasing [53]",2591172,69972,2.775
-"76",2013,"Canada","Professional, scientific and technical services [54]",1192824,31404,2.704
-"77",2013,"Canada","Management of companies and enterprises [55]",146256,8928,6.501
-"78",2013,"Canada","Administrative and support, waste management and remediation services [56]",577680,4068,0.709
-"79",2013,"Canada","Educational services [61]",1141344,16884,1.502
-"80",2013,"Canada","Health care and social assistance [62]",1468284,2280,0.156
-"81",2013,"Canada","Arts, entertainment and recreation [71]",156036,864,0.557
-"82",2013,"Canada","Accommodation and food services [72]",442200,15660,3.671
-"83",2013,"Canada","Other services (except public administration) [81]",430524,10044,2.389
-"84",2013,"Canada","Public administration [91]",1463052,-6072,-0.413
-"85",2014,"Canada","All industries [T001]",21654005,606942,2.884
-"86",2014,"Canada","Agriculture, forestry, fishing and hunting [11]",434041,-30993,-6.665
-"87",2014,"Canada","Mining, quarrying, and oil and gas extraction [21]",1700412,127956,8.137
-"88",2014,"Canada","Utilities [22]",484116,16152,3.452
-"89",2014,"Canada","Construction [23]",1734648,44688,2.644
-"90",2014,"Canada","Manufacturing [31-33]",2254967,65083,2.972
-"91",2014,"Canada","Wholesale trade [41]",1171176,29220,2.559
-"92",2014,"Canada","Retail trade [44-45]",1095310,11601,1.07
-"93",2014,"Canada","Transportation and warehousing [48-49]",924720,52248,5.989
-"94",2014,"Canada","Information and cultural industries [51]",673560,21024,3.222
-"95",2014,"Canada","Finance and insurance [52]",1341768,36732,2.815
-"96",2014,"Canada","Real estate and rental and leasing [53]",2664168,72996,2.817
-"97",2014,"Canada","Professional, scientific and technical services [54]",1254204,61380,5.146
-"98",2014,"Canada","Management of companies and enterprises [55]",136320,-9936,-6.794
-"99",2014,"Canada","Administrative and support, waste management and remediation services [56]",600588,22908,3.966
-"100",2014,"Canada","Educational services [61]",1157424,16080,1.409
-"101",2014,"Canada","Health care and social assistance [62]",1490652,22368,1.523
-"102",2014,"Canada","Arts, entertainment and recreation [71]",164124,8088,5.183
-"103",2014,"Canada","Accommodation and food services [72]",467652,25452,5.756
-"104",2014,"Canada","Other services (except public administration) [81]",445164,14640,3.401
-"105",2014,"Canada","Public administration [91]",1455708,-7344,-0.502
-"106",2015,"Canada","All industries [T001]",21832224,178219,0.823
-"107",2015,"Canada","Agriculture, forestry, fishing and hunting [11]",452940,18899,4.354
-"108",2015,"Canada","Mining, quarrying, and oil and gas extraction [21]",1653396,-47016,-2.765
-"109",2015,"Canada","Utilities [22]",486456,2340,0.483
-"110",2015,"Canada","Construction [23]",1694112,-40536,-2.337
-"111",2015,"Canada","Manufacturing [31-33]",2267748,12781,0.567
-"112",2015,"Canada","Wholesale trade [41]",1132932,-38244,-3.265
-"113",2015,"Canada","Retail trade [44-45]",1093896,-1414,-0.129
-"114",2015,"Canada","Transportation and warehousing [48-49]",949140,24420,2.641
-"115",2015,"Canada","Information and cultural industries [51]",687480,13920,2.067
-"116",2015,"Canada","Finance and insurance [52]",1407156,65388,4.873
-"117",2015,"Canada","Real estate and rental and leasing [53]",2743428,79260,2.975
-"118",2015,"Canada","Professional, scientific and technical services [54]",1249968,-4236,-0.338
-"119",2015,"Canada","Management of companies and enterprises [55]",141960,5640,4.137
-"120",2015,"Canada","Administrative and support, waste management and remediation services [56]",611784,11196,1.864
-"121",2015,"Canada","Educational services [61]",1171680,14256,1.232
-"122",2015,"Canada","Health care and social assistance [62]",1512144,21492,1.442
-"123",2015,"Canada","Arts, entertainment and recreation [71]",167136,3012,1.835
-"124",2015,"Canada","Accommodation and food services [72]",479700,12048,2.576
-"125",2015,"Canada","Other services (except public administration) [81]",446868,1704,0.383
-"126",2015,"Canada","Public administration [91]",1464948,9240,0.635
-"127",2016,"Canada","All industries [T001]",22064904,232680,1.066
-"128",2016,"Canada","Agriculture, forestry, fishing and hunting [11]",471576,18636,4.114
-"129",2016,"Canada","Mining, quarrying, and oil and gas extraction [21]",1632084,-21312,-1.289
-"130",2016,"Canada","Utilities [22]",497124,10668,2.193
-"131",2016,"Canada","Construction [23]",1612776,-81336,-4.801
-"132",2016,"Canada","Manufacturing [31-33]",2267544,-204,-0.009
-"133",2016,"Canada","Wholesale trade [41]",1131036,-1896,-0.167
-"134",2016,"Canada","Retail trade [44-45]",1135596,41700,3.812
-"135",2016,"Canada","Transportation and warehousing [48-49]",971796,22656,2.387
-"136",2016,"Canada","Information and cultural industries [51]",713676,26196,3.81
-"137",2016,"Canada","Finance and insurance [52]",1456620,49464,3.515
-"138",2016,"Canada","Real estate and rental and leasing [53]",2811012,67584,2.463
-"139",2016,"Canada","Professional, scientific and technical services [54]",1278636,28668,2.293
-"140",2016,"Canada","Management of companies and enterprises [55]",121320,-20640,-14.539
-"141",2016,"Canada","Administrative and support, waste management and remediation services [56]",611640,-144,-0.024
-"142",2016,"Canada","Educational services [61]",1178928,7248,0.619
-"143",2016,"Canada","Health care and social assistance [62]",1547640,35496,2.347
-"144",2016,"Canada","Arts, entertainment and recreation [71]",171864,4728,2.829
-"145",2016,"Canada","Accommodation and food services [72]",492828,13128,2.737
-"146",2016,"Canada","Other services (except public administration) [81]",440064,-6804,-1.523
-"147",2016,"Canada","Public administration [91]",1490340,25392,1.733
-"148",2017,"Canada","All industries [T001]",22750824,685920,3.109
-"149",2017,"Canada","Agriculture, forestry, fishing and hunting [11]",482412,10836,2.298
-"150",2017,"Canada","Mining, quarrying, and oil and gas extraction [21]",1787412,155328,9.517
-"151",2017,"Canada","Utilities [22]",503004,5880,1.183
-"152",2017,"Canada","Construction [23]",1672740,59964,3.718
-"153",2017,"Canada","Manufacturing [31-33]",2311644,44100,1.945
-"154",2017,"Canada","Wholesale trade [41]",1170348,39312,3.476
-"155",2017,"Canada","Retail trade [44-45]",1165704,30108,2.651
-"156",2017,"Canada","Transportation and warehousing [48-49]",1030836,59040,6.075
-"157",2017,"Canada","Information and cultural industries [51]",739284,25608,3.588
-"158",2017,"Canada","Finance and insurance [52]",1560972,104352,7.164
-"159",2017,"Canada","Real estate and rental and leasing [53]",2890512,79500,2.828
-"160",2017,"Canada","Professional, scientific and technical services [54]",1321044,42408,3.317
-"161",2017,"Canada","Management of companies and enterprises [55]",107808,-13512,-11.137
-"162",2017,"Canada","Administrative and support, waste management and remediation services [56]",604836,-6804,-1.112
-"163",2017,"Canada","Educational services [61]",1197144,18216,1.545
-"164",2017,"Canada","Health care and social assistance [62]",1566432,18792,1.214
-"165",2017,"Canada","Arts, entertainment and recreation [71]",180672,8808,5.125
-"166",2017,"Canada","Accommodation and food services [72]",498984,6156,1.249
-"167",2017,"Canada","Other services (except public administration) [81]",456204,16140,3.668
-"168",2017,"Canada","Public administration [91]",1518804,28464,1.91
-"169",2018,"Canada","All industries [T001]",23340180,589356,2.59
-"170",2018,"Canada","Agriculture, forestry, fishing and hunting [11]",491580,9168,1.9
-"171",2018,"Canada","Mining, quarrying, and oil and gas extraction [21]",1895400,107988,6.042
-"172",2018,"Canada","Utilities [22]",511740,8736,1.737
-"173",2018,"Canada","Construction [23]",1706904,34164,2.042
-"174",2018,"Canada","Manufacturing [31-33]",2379468,67824,2.934
-"175",2018,"Canada","Wholesale trade [41]",1207632,37284,3.186
-"176",2018,"Canada","Retail trade [44-45]",1186224,20520,1.76
-"177",2018,"Canada","Transportation and warehousing [48-49]",1066320,35484,3.442
-"178",2018,"Canada","Information and cultural industries [51]",753708,14424,1.951
-"179",2018,"Canada","Finance and insurance [52]",1591368,30396,1.947
-"180",2018,"Canada","Real estate and rental and leasing [53]",2947236,56724,1.962
-"181",2018,"Canada","Professional, scientific and technical services [54]",1366404,45360,3.434
-"182",2018,"Canada","Management of companies and enterprises [55]",95292,-12516,-11.61
-"183",2018,"Canada","Administrative and support, waste management and remediation services [56]",614376,9540,1.577
-"184",2018,"Canada","Educational services [61]",1231044,33900,2.832
-"185",2018,"Canada","Health care and social assistance [62]",1614564,48132,3.073
-"186",2018,"Canada","Arts, entertainment and recreation [71]",184104,3432,1.9
-"187",2018,"Canada","Accommodation and food services [72]",510324,11340,2.273
-"188",2018,"Canada","Other services (except public administration) [81]",461868,5664,1.242
-"189",2018,"Canada","Public administration [91]",1559808,41004,2.7
-"190",2019,"Canada","All industries [T001]",23761044,420864,1.803
-"191",2019,"Canada","Agriculture, forestry, fishing and hunting [11]",520200,28620,5.822
-"192",2019,"Canada","Mining, quarrying, and oil and gas extraction [21]",1881492,-13908,-0.734
-"193",2019,"Canada","Utilities [22]",515964,4224,0.825
-"194",2019,"Canada","Construction [23]",1703976,-2928,-0.172
-"195",2019,"Canada","Manufacturing [31-33]",2373864,-5604,-0.236
-"196",2019,"Canada","Wholesale trade [41]",1227036,19404,1.607
-"197",2019,"Canada","Retail trade [44-45]",1194180,7956,0.671
-"198",2019,"Canada","Transportation and warehousing [48-49]",1077660,11340,1.063
-"199",2019,"Canada","Information and cultural industries [51]",780828,27120,3.598
-"200",2019,"Canada","Finance and insurance [52]",1639224,47856,3.007
-"201",2019,"Canada","Real estate and rental and leasing [53]",3027876,80640,2.736
-"202",2019,"Canada","Professional, scientific and technical services [54]",1427616,61212,4.48
-"203",2019,"Canada","Management of companies and enterprises [55]",84948,-10344,-10.855
-"204",2019,"Canada","Administrative and support, waste management and remediation services [56]",622956,8580,1.397
-"205",2019,"Canada","Educational services [61]",1258008,26964,2.19
-"206",2019,"Canada","Health care and social assistance [62]",1666884,52320,3.241
-"207",2019,"Canada","Arts, entertainment and recreation [71]",188736,4632,2.516
-"208",2019,"Canada","Accommodation and food services [72]",522180,11856,2.323
-"209",2019,"Canada","Other services (except public administration) [81]",467532,5664,1.226
-"210",2019,"Canada","Public administration [91]",1598928,39120,2.508
-"211",2020,"Canada","All industries [T001]",22523306,-1237738,-5.209
-"212",2020,"Canada","Agriculture, forestry, fishing and hunting [11]",549556,29356,5.643
-"213",2020,"Canada","Mining, quarrying, and oil and gas extraction [21]",1718794,-162698,-8.647
-"214",2020,"Canada","Utilities [22]",503768,-12196,-2.364
-"215",2020,"Canada","Construction [23]",1647682,-56294,-3.304
-"216",2020,"Canada","Manufacturing [31-33]",2147063,-226801,-9.554
-"217",2020,"Canada","Wholesale trade [41]",1197825,-29211,-2.381
-"218",2020,"Canada","Retail trade [44-45]",1154812,-39368,-3.297
-"219",2020,"Canada","Transportation and warehousing [48-49]",863988,-213672,-19.827
-"220",2020,"Canada","Information and cultural industries [51]",766032,-14796,-1.895
-"221",2020,"Canada","Finance and insurance [52]",1720228,81004,4.942
-"222",2020,"Canada","Real estate and rental and leasing [53]",3073080,45204,1.493
-"223",2020,"Canada","Professional, scientific and technical services [54]",1389728,-37888,-2.654
-"224",2020,"Canada","Management of companies and enterprises [55]",73019,-11929,-14.043
-"225",2020,"Canada","Administrative and support, waste management and remediation services [56]",544247,-78709,-12.635
-"226",2020,"Canada","Educational services [61]",1189484,-68524,-5.447
-"227",2020,"Canada","Health care and social assistance [62]",1569460,-97424,-5.845
-"228",2020,"Canada","Arts, entertainment and recreation [71]",108322,-80414,-42.607
-"229",2020,"Canada","Accommodation and food services [72]",346304,-175876,-33.681
-"230",2020,"Canada","Other services (except public administration) [81]",394366,-73166,-15.649
-"231",2020,"Canada","Public administration [91]",1574161,-24767,-1.549
+"1",2010,"Canada","All industries [T001]",1624730.25,55086.25,3.509
+"2",2010,"Canada","Agriculture, forestry, fishing and hunting [11]",31389.083,404,1.304
+"3",2010,"Canada","Mining, quarrying, and oil and gas extraction [21]",118699.917,10504.833,9.709
+"4",2010,"Canada","Utilities [22]",38060.083,536.167,1.429
+"5",2010,"Canada","Construction [23]",120343.833,9146.833,8.226
+"6",2010,"Canada","Manufacturing [31-33]",174408.833,8034.083,4.829
+"7",2010,"Canada","Wholesale trade [41]",82073,5740.083,7.52
+"8",2010,"Canada","Retail trade [44-45]",84347.083,2373.083,2.895
+"9",2010,"Canada","Transportation and warehousing [48-49]",67861.083,2500.083,3.825
+"10",2010,"Canada","Information and cultural industries [51]",53480.083,1110.083,2.12
+"11",2010,"Canada","Finance and insurance [52]",99678.833,2123.667,2.177
+"12",2010,"Canada","Real estate and rental and leasing [53]",197448.25,6179.417,3.231
+"13",2010,"Canada","Professional, scientific and technical services [54]",89805,164.083,0.183
+"14",2010,"Canada","Management of companies and enterprises [55]",11290.083,-418.917,-3.578
+"15",2010,"Canada","Administrative and support, waste management and remediation services [56]",45031,794.917,1.797
+"16",2010,"Canada","Educational services [61]",91166.083,1748.167,1.955
+"17",2010,"Canada","Health care and social assistance [62]",118226.083,1734.083,1.489
+"18",2010,"Canada","Arts, entertainment and recreation [71]",12955.083,-422,-3.155
+"19",2010,"Canada","Accommodation and food services [72]",33971.083,-115,-0.337
+"20",2010,"Canada","Other services (except public administration) [81]",33344,-320.083,-0.951
+"21",2010,"Canada","Public administration [91]",121233.833,3269.583,2.772
+"22",2011,"Canada","All industries [T001]",1678328.917,53598.667,3.299
+"23",2011,"Canada","Agriculture, forestry, fishing and hunting [11]",32672,1282.917,4.087
+"24",2011,"Canada","Mining, quarrying, and oil and gas extraction [21]",126955.25,8255.333,6.955
+"25",2011,"Canada","Utilities [22]",39342,1281.917,3.368
+"26",2011,"Canada","Construction [23]",125048.75,4704.917,3.91
+"27",2011,"Canada","Manufacturing [31-33]",180459.833,6051,3.469
+"28",2011,"Canada","Wholesale trade [41]",88224.083,6151.083,7.495
+"29",2011,"Canada","Retail trade [44-45]",85125.833,778.75,0.923
+"30",2011,"Canada","Transportation and warehousing [48-49]",70485.083,2624,3.867
+"31",2011,"Canada","Information and cultural industries [51]",54218.083,738,1.38
+"32",2011,"Canada","Finance and insurance [52]",103061.083,3382.25,3.393
+"33",2011,"Canada","Real estate and rental and leasing [53]",203638.833,6190.583,3.135
+"34",2011,"Canada","Professional, scientific and technical services [54]",94166.833,4361.833,4.857
+"35",2011,"Canada","Management of companies and enterprises [55]",11422.167,132.083,1.17
+"36",2011,"Canada","Administrative and support, waste management and remediation services [56]",45628.833,597.833,1.328
+"37",2011,"Canada","Educational services [61]",91927.167,761.083,0.835
+"38",2011,"Canada","Health care and social assistance [62]",120291.083,2065,1.747
+"39",2011,"Canada","Arts, entertainment and recreation [71]",12929,-26.083,-0.201
+"40",2011,"Canada","Accommodation and food services [72]",34701.083,730,2.149
+"41",2011,"Canada","Other services (except public administration) [81]",34322.917,978.917,2.936
+"42",2011,"Canada","Public administration [91]",123419.083,2185.25,1.803
+"43",2012,"Canada","All industries [T001]",1710432.417,32103.5,1.913
+"44",2012,"Canada","Agriculture, forestry, fishing and hunting [11]",33097.083,425.083,1.301
+"45",2012,"Canada","Mining, quarrying, and oil and gas extraction [21]",124526,-2429.25,-1.913
+"46",2012,"Canada","Utilities [22]",38953,-389,-0.989
+"47",2012,"Canada","Construction [23]",134959,9910.25,7.925
+"48",2012,"Canada","Manufacturing [31-33]",183090,2630.167,1.457
+"49",2012,"Canada","Wholesale trade [41]",91307,3082.917,3.494
+"50",2012,"Canada","Retail trade [44-45]",85541,415.167,0.488
+"51",2012,"Canada","Transportation and warehousing [48-49]",71428,942.917,1.338
+"52",2012,"Canada","Information and cultural industries [51]",54677,458.917,0.846
+"53",2012,"Canada","Finance and insurance [52]",104909,1847.917,1.793
+"54",2012,"Canada","Real estate and rental and leasing [53]",210100,6461.167,3.173
+"55",2012,"Canada","Professional, scientific and technical services [54]",96785,2618.167,2.78
+"56",2012,"Canada","Management of companies and enterprises [55]",11444,21.833,0.191
+"57",2012,"Canada","Administrative and support, waste management and remediation services [56]",47801,2172.167,4.761
+"58",2012,"Canada","Educational services [61]",93705,1777.833,1.934
+"59",2012,"Canada","Health care and social assistance [62]",122167,1875.917,1.559
+"60",2012,"Canada","Arts, entertainment and recreation [71]",12931,2,0.015
+"61",2012,"Canada","Accommodation and food services [72]",35545,843.917,2.432
+"62",2012,"Canada","Other services (except public administration) [81]",35040,717.083,2.089
+"63",2012,"Canada","Public administration [91]",122427,-992.083,-0.804
+"64",2013,"Canada","All industries [T001]",1753921.917,43489.5,2.543
+"65",2013,"Canada","Agriculture, forestry, fishing and hunting [11]",38752.833,5655.75,17.088
+"66",2013,"Canada","Mining, quarrying, and oil and gas extraction [21]",131038,6512,5.229
+"67",2013,"Canada","Utilities [22]",38997,44,0.113
+"68",2013,"Canada","Construction [23]",140830,5871,4.35
+"69",2013,"Canada","Manufacturing [31-33]",182490.333,-599.667,-0.328
+"70",2013,"Canada","Wholesale trade [41]",95163,3856,4.223
+"71",2013,"Canada","Retail trade [44-45]",90309.083,4768.083,5.574
+"72",2013,"Canada","Transportation and warehousing [48-49]",72706,1278,1.789
+"73",2013,"Canada","Information and cultural industries [51]",54378,-299,-0.547
+"74",2013,"Canada","Finance and insurance [52]",108753,3844,3.664
+"75",2013,"Canada","Real estate and rental and leasing [53]",215931,5831,2.775
+"76",2013,"Canada","Professional, scientific and technical services [54]",99402,2617,2.704
+"77",2013,"Canada","Management of companies and enterprises [55]",12188,744,6.501
+"78",2013,"Canada","Administrative and support, waste management and remediation services [56]",48140,339,0.709
+"79",2013,"Canada","Educational services [61]",95112,1407,1.502
+"80",2013,"Canada","Health care and social assistance [62]",122357,190,0.156
+"81",2013,"Canada","Arts, entertainment and recreation [71]",13003,72,0.557
+"82",2013,"Canada","Accommodation and food services [72]",36850,1305,3.671
+"83",2013,"Canada","Other services (except public administration) [81]",35877,837,2.389
+"84",2013,"Canada","Public administration [91]",121921,-506,-0.413
+"85",2014,"Canada","All industries [T001]",1804500.417,50578.5,2.884
+"86",2014,"Canada","Agriculture, forestry, fishing and hunting [11]",36170.083,-2582.75,-6.665
+"87",2014,"Canada","Mining, quarrying, and oil and gas extraction [21]",141701,10663,8.137
+"88",2014,"Canada","Utilities [22]",40343,1346,3.452
+"89",2014,"Canada","Construction [23]",144554,3724,2.644
+"90",2014,"Canada","Manufacturing [31-33]",187913.917,5423.583,2.972
+"91",2014,"Canada","Wholesale trade [41]",97598,2435,2.559
+"92",2014,"Canada","Retail trade [44-45]",91275.833,966.75,1.07
+"93",2014,"Canada","Transportation and warehousing [48-49]",77060,4354,5.989
+"94",2014,"Canada","Information and cultural industries [51]",56130,1752,3.222
+"95",2014,"Canada","Finance and insurance [52]",111814,3061,2.815
+"96",2014,"Canada","Real estate and rental and leasing [53]",222014,6083,2.817
+"97",2014,"Canada","Professional, scientific and technical services [54]",104517,5115,5.146
+"98",2014,"Canada","Management of companies and enterprises [55]",11360,-828,-6.794
+"99",2014,"Canada","Administrative and support, waste management and remediation services [56]",50049,1909,3.966
+"100",2014,"Canada","Educational services [61]",96452,1340,1.409
+"101",2014,"Canada","Health care and social assistance [62]",124221,1864,1.523
+"102",2014,"Canada","Arts, entertainment and recreation [71]",13677,674,5.183
+"103",2014,"Canada","Accommodation and food services [72]",38971,2121,5.756
+"104",2014,"Canada","Other services (except public administration) [81]",37097,1220,3.401
+"105",2014,"Canada","Public administration [91]",121309,-612,-0.502
+"106",2015,"Canada","All industries [T001]",1819352,14851.583,0.823
+"107",2015,"Canada","Agriculture, forestry, fishing and hunting [11]",37745,1574.917,4.354
+"108",2015,"Canada","Mining, quarrying, and oil and gas extraction [21]",137783,-3918,-2.765
+"109",2015,"Canada","Utilities [22]",40538,195,0.483
+"110",2015,"Canada","Construction [23]",141176,-3378,-2.337
+"111",2015,"Canada","Manufacturing [31-33]",188979,1065.083,0.567
+"112",2015,"Canada","Wholesale trade [41]",94411,-3187,-3.265
+"113",2015,"Canada","Retail trade [44-45]",91158,-117.833,-0.129
+"114",2015,"Canada","Transportation and warehousing [48-49]",79095,2035,2.641
+"115",2015,"Canada","Information and cultural industries [51]",57290,1160,2.067
+"116",2015,"Canada","Finance and insurance [52]",117263,5449,4.873
+"117",2015,"Canada","Real estate and rental and leasing [53]",228619,6605,2.975
+"118",2015,"Canada","Professional, scientific and technical services [54]",104164,-353,-0.338
+"119",2015,"Canada","Management of companies and enterprises [55]",11830,470,4.137
+"120",2015,"Canada","Administrative and support, waste management and remediation services [56]",50982,933,1.864
+"121",2015,"Canada","Educational services [61]",97640,1188,1.232
+"122",2015,"Canada","Health care and social assistance [62]",126012,1791,1.442
+"123",2015,"Canada","Arts, entertainment and recreation [71]",13928,251,1.835
+"124",2015,"Canada","Accommodation and food services [72]",39975,1004,2.576
+"125",2015,"Canada","Other services (except public administration) [81]",37239,142,0.383
+"126",2015,"Canada","Public administration [91]",122079,770,0.635
+"127",2016,"Canada","All industries [T001]",1838742,19390,1.066
+"128",2016,"Canada","Agriculture, forestry, fishing and hunting [11]",39298,1553,4.114
+"129",2016,"Canada","Mining, quarrying, and oil and gas extraction [21]",136007,-1776,-1.289
+"130",2016,"Canada","Utilities [22]",41427,889,2.193
+"131",2016,"Canada","Construction [23]",134398,-6778,-4.801
+"132",2016,"Canada","Manufacturing [31-33]",188962,-17,-0.009
+"133",2016,"Canada","Wholesale trade [41]",94253,-158,-0.167
+"134",2016,"Canada","Retail trade [44-45]",94633,3475,3.812
+"135",2016,"Canada","Transportation and warehousing [48-49]",80983,1888,2.387
+"136",2016,"Canada","Information and cultural industries [51]",59473,2183,3.81
+"137",2016,"Canada","Finance and insurance [52]",121385,4122,3.515
+"138",2016,"Canada","Real estate and rental and leasing [53]",234251,5632,2.463
+"139",2016,"Canada","Professional, scientific and technical services [54]",106553,2389,2.293
+"140",2016,"Canada","Management of companies and enterprises [55]",10110,-1720,-14.539
+"141",2016,"Canada","Administrative and support, waste management and remediation services [56]",50970,-12,-0.024
+"142",2016,"Canada","Educational services [61]",98244,604,0.619
+"143",2016,"Canada","Health care and social assistance [62]",128970,2958,2.347
+"144",2016,"Canada","Arts, entertainment and recreation [71]",14322,394,2.829
+"145",2016,"Canada","Accommodation and food services [72]",41069,1094,2.737
+"146",2016,"Canada","Other services (except public administration) [81]",36672,-567,-1.523
+"147",2016,"Canada","Public administration [91]",124195,2116,1.733
+"148",2017,"Canada","All industries [T001]",1895902,57160,3.109
+"149",2017,"Canada","Agriculture, forestry, fishing and hunting [11]",40201,903,2.298
+"150",2017,"Canada","Mining, quarrying, and oil and gas extraction [21]",148951,12944,9.517
+"151",2017,"Canada","Utilities [22]",41917,490,1.183
+"152",2017,"Canada","Construction [23]",139395,4997,3.718
+"153",2017,"Canada","Manufacturing [31-33]",192637,3675,1.945
+"154",2017,"Canada","Wholesale trade [41]",97529,3276,3.476
+"155",2017,"Canada","Retail trade [44-45]",97142,2509,2.651
+"156",2017,"Canada","Transportation and warehousing [48-49]",85903,4920,6.075
+"157",2017,"Canada","Information and cultural industries [51]",61607,2134,3.588
+"158",2017,"Canada","Finance and insurance [52]",130081,8696,7.164
+"159",2017,"Canada","Real estate and rental and leasing [53]",240876,6625,2.828
+"160",2017,"Canada","Professional, scientific and technical services [54]",110087,3534,3.317
+"161",2017,"Canada","Management of companies and enterprises [55]",8984,-1126,-11.137
+"162",2017,"Canada","Administrative and support, waste management and remediation services [56]",50403,-567,-1.112
+"163",2017,"Canada","Educational services [61]",99762,1518,1.545
+"164",2017,"Canada","Health care and social assistance [62]",130536,1566,1.214
+"165",2017,"Canada","Arts, entertainment and recreation [71]",15056,734,5.125
+"166",2017,"Canada","Accommodation and food services [72]",41582,513,1.249
+"167",2017,"Canada","Other services (except public administration) [81]",38017,1345,3.668
+"168",2017,"Canada","Public administration [91]",126567,2372,1.91
+"169",2018,"Canada","All industries [T001]",1945015,49113,2.59
+"170",2018,"Canada","Agriculture, forestry, fishing and hunting [11]",40965,764,1.9
+"171",2018,"Canada","Mining, quarrying, and oil and gas extraction [21]",157950,8999,6.042
+"172",2018,"Canada","Utilities [22]",42645,728,1.737
+"173",2018,"Canada","Construction [23]",142242,2847,2.042
+"174",2018,"Canada","Manufacturing [31-33]",198289,5652,2.934
+"175",2018,"Canada","Wholesale trade [41]",100636,3107,3.186
+"176",2018,"Canada","Retail trade [44-45]",98852,1710,1.76
+"177",2018,"Canada","Transportation and warehousing [48-49]",88860,2957,3.442
+"178",2018,"Canada","Information and cultural industries [51]",62809,1202,1.951
+"179",2018,"Canada","Finance and insurance [52]",132614,2533,1.947
+"180",2018,"Canada","Real estate and rental and leasing [53]",245603,4727,1.962
+"181",2018,"Canada","Professional, scientific and technical services [54]",113867,3780,3.434
+"182",2018,"Canada","Management of companies and enterprises [55]",7941,-1043,-11.61
+"183",2018,"Canada","Administrative and support, waste management and remediation services [56]",51198,795,1.577
+"184",2018,"Canada","Educational services [61]",102587,2825,2.832
+"185",2018,"Canada","Health care and social assistance [62]",134547,4011,3.073
+"186",2018,"Canada","Arts, entertainment and recreation [71]",15342,286,1.9
+"187",2018,"Canada","Accommodation and food services [72]",42527,945,2.273
+"188",2018,"Canada","Other services (except public administration) [81]",38489,472,1.242
+"189",2018,"Canada","Public administration [91]",129984,3417,2.7
+"190",2019,"Canada","All industries [T001]",1980087,35072,1.803
+"191",2019,"Canada","Agriculture, forestry, fishing and hunting [11]",43350,2385,5.822
+"192",2019,"Canada","Mining, quarrying, and oil and gas extraction [21]",156791,-1159,-0.734
+"193",2019,"Canada","Utilities [22]",42997,352,0.825
+"194",2019,"Canada","Construction [23]",141998,-244,-0.172
+"195",2019,"Canada","Manufacturing [31-33]",197822,-467,-0.236
+"196",2019,"Canada","Wholesale trade [41]",102253,1617,1.607
+"197",2019,"Canada","Retail trade [44-45]",99515,663,0.671
+"198",2019,"Canada","Transportation and warehousing [48-49]",89805,945,1.063
+"199",2019,"Canada","Information and cultural industries [51]",65069,2260,3.598
+"200",2019,"Canada","Finance and insurance [52]",136602,3988,3.007
+"201",2019,"Canada","Real estate and rental and leasing [53]",252323,6720,2.736
+"202",2019,"Canada","Professional, scientific and technical services [54]",118968,5101,4.48
+"203",2019,"Canada","Management of companies and enterprises [55]",7079,-862,-10.855
+"204",2019,"Canada","Administrative and support, waste management and remediation services [56]",51913,715,1.397
+"205",2019,"Canada","Educational services [61]",104834,2247,2.19
+"206",2019,"Canada","Health care and social assistance [62]",138907,4360,3.241
+"207",2019,"Canada","Arts, entertainment and recreation [71]",15728,386,2.516
+"208",2019,"Canada","Accommodation and food services [72]",43515,988,2.323
+"209",2019,"Canada","Other services (except public administration) [81]",38961,472,1.226
+"210",2019,"Canada","Public administration [91]",133244,3260,2.508
+"211",2020,"Canada","All industries [T001]",1876942.167,-103144.833,-5.209
+"212",2020,"Canada","Agriculture, forestry, fishing and hunting [11]",45796.333,2446.333,5.643
+"213",2020,"Canada","Mining, quarrying, and oil and gas extraction [21]",143232.833,-13558.167,-8.647
+"214",2020,"Canada","Utilities [22]",41980.667,-1016.333,-2.364
+"215",2020,"Canada","Construction [23]",137306.833,-4691.167,-3.304
+"216",2020,"Canada","Manufacturing [31-33]",178921.917,-18900.083,-9.554
+"217",2020,"Canada","Wholesale trade [41]",99818.75,-2434.25,-2.381
+"218",2020,"Canada","Retail trade [44-45]",96234.333,-3280.667,-3.297
+"219",2020,"Canada","Transportation and warehousing [48-49]",71999,-17806,-19.827
+"220",2020,"Canada","Information and cultural industries [51]",63836,-1233,-1.895
+"221",2020,"Canada","Finance and insurance [52]",143352.333,6750.333,4.942
+"222",2020,"Canada","Real estate and rental and leasing [53]",256090,3767,1.493
+"223",2020,"Canada","Professional, scientific and technical services [54]",115810.667,-3157.333,-2.654
+"224",2020,"Canada","Management of companies and enterprises [55]",6084.917,-994.083,-14.043
+"225",2020,"Canada","Administrative and support, waste management and remediation services [56]",45353.917,-6559.083,-12.635
+"226",2020,"Canada","Educational services [61]",99123.667,-5710.333,-5.447
+"227",2020,"Canada","Health care and social assistance [62]",130788.333,-8118.667,-5.845
+"228",2020,"Canada","Arts, entertainment and recreation [71]",9026.833,-6701.167,-42.607
+"229",2020,"Canada","Accommodation and food services [72]",28858.667,-14656.333,-33.681
+"230",2020,"Canada","Other services (except public administration) [81]",32863.833,-6097.167,-15.649
+"231",2020,"Canada","Public administration [91]",131180.083,-2063.917,-1.549

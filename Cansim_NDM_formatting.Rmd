@@ -33,6 +33,9 @@ Step 1.1
 Step 1.2
 -   Gross domestic product (GDP) at basic prices, by industry, provinces and territories (x 1,000,000) [36-10-0402-01](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610040201)
 
+-   Gross domestic product (GDP) at basic prices, by industry, provinces and territories, contributions to national percentage change [36-10-0658-01](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=3610065801)
+
+
 Step 1.3
 - Population estimates on July 1st, by age and sex [17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501)
 
@@ -153,6 +156,7 @@ provinces <- c(
 gdp_canada_per_industry_table_number <- "36-10-0434-03" # initialy, the table monthly was used "36-10-0434-02", but this annual table reduce the length of the code for the same result so we'll use it instead.
 #step 1.2
 gdp_provinces_per_industry_table_number <- "36-10-0402-01"
+gdp_CPC_national_provinces_per_industry_table_number <- "36-10-0658-01"
 #step 1.3
 population_table_number <- "17-10-0005-01"
 international_migration_table_number <- "17-10-0040-01"
@@ -237,7 +241,7 @@ here()
 
 ```{r database for canada gdp,  echo=FALSE, include=FALSE}
 #Loading the data base - using cansim function to obtain the ndm format of the table.
-
+# only the first cansim table can be loaded se we will use the monthly table
 gdp_canada_per_industry <- cansim::get_cansim(gdp_canada_per_industry_table_number)
 gdp_canada_per_industry <- janitor::clean_names(gdp_canada_per_industry) # get rid of capital letters in col names
 
@@ -259,7 +263,7 @@ gdp_canada_per_industry %>%
    distinct() %>%
   select(!classification_code_for_north_american_industry_classification_system_naics) %>%
   select(! prices) %>%
-  #mutate(value = value/12) %>%  #this function is only for when we use the monthly table at annual rate
+  mutate(value = value/12) %>%  #this function is only for when we use the monthly table at annual rate
   rename_if(is.numeric, funs(str_c("value"))) ->
 clean_gdp_canada_per_industry
 
@@ -356,29 +360,62 @@ interactive_table(Transit_gdp_provinces_per_industry)
 
 
 ```
+# gdp CPC national provinces per industry Step 1.2 
+
+```{r database for gdp CPC national provinces per industry,  echo=FALSE, include=FALSE}
+#Loading the data base - using cansim function to obtain the ndm format of the table.
+
+gdp_CPC_national_provinces_per_industry <- cansim::get_cansim(gdp_CPC_national_provinces_per_industry_table_number)
+gdp_CPC_national_provinces_per_industry <- janitor::clean_names(gdp_CPC_national_provinces_per_industry) # get rid of capital letters in col names
+
+```
+
+```{r gdp CPC national provinces per industry formatting}
+
+unique(gdp_CPC_national_provinces_per_industry$value_2)
+
+gdp_CPC_national_provinces_per_industry %>%
+  select(ref_date, geo, north_american_industry_classification_system_naics, value, classification_code_for_north_american_industry_classification_system_naics) %>%
+  filter(ref_date > from_this_year) %>%
+  filter(classification_code_for_north_american_industry_classification_system_naics %in% c(two_digit_naics_code)) %>%
+   distinct() %>%
+  select(!classification_code_for_north_american_industry_classification_system_naics) %>%
+  #select(! value_2) %>%
+  rename_if(is.numeric, funs(str_c("value"))) ->
+clean_gdp_CPC_national_provinces_per_industry
+
+
+write.csv(clean_gdp_CPC_national_provinces_per_industry, file = "clean_gdp_CPC_national_provinces_per_industry_step1.2.csv")
+
+interactive_table(clean_gdp_CPC_national_provinces_per_industry)
+
+
+```
+
+
+
+
 
 
 ```{r provinces gdp CPC Canada gdp formatting}
-
 Transit_gdp_canada_per_industry %>%
-  select(ref_year, geo, north_american_industry_classification_system_naics, value_fd) %>%
+  select(ref_year, geo, north_american_industry_classification_system_naics, value_fd, value_pc) %>%
   rename(total_GDP_growth_canada = value_fd) %>%
+  rename(canada_percent_change_per_industry = value_pc) %>%
   rename(ref_date = ref_year)  %>%
   ungroup() %>%
   select(! geo) ->
   provinces_gdp_CPC_canada_gdp1
 
 Transit_gdp_provinces_per_industry %>%
-  select(ref_date, geo, north_american_industry_classification_system_naics, value_2, value_fd) %>%
-  rename(value = value_fd) %>%
+  select(ref_date, geo, north_american_industry_classification_system_naics, value_pc, value_2, value_fd) %>%
   filter(value_2 %in% "Chained (2012) dollars") %>% #only keep said value
   ungroup() %>%
   select(! value_2) ->
   provinces_gdp_CPC_canada_gdp2
 
 Transit_gdp_canada_per_industry %>%
-  select(ref_year, geo, north_american_industry_classification_system_naics, value_fd) %>%
-  rename(value = value_fd) %>%
+  select(ref_year, geo, north_american_industry_classification_system_naics, value_pc, value_fd) %>%
   rename(ref_date = ref_year)  ->
   provinces_gdp_CPC_canada_gdp3
 
@@ -386,16 +423,16 @@ provinces_gdp_CPC_canada_gdp4 <- rbind(as_tibble(provinces_gdp_CPC_canada_gdp2),
 
 provinces_gdp_CPC_canada_gdp <- merge(as_tibble(provinces_gdp_CPC_canada_gdp1), as_tibble(provinces_gdp_CPC_canada_gdp4), by = c("ref_date", "north_american_industry_classification_system_naics"))
 
+
 provinces_gdp_CPC_canada_gdp %>%
-  mutate(gdp_contribution_to_national_percent_change = value/total_GDP_growth_canada) %>%
+  mutate(gdp_contribution_to_national_percent_change = value_fd/total_GDP_growth_canada) %>%
+  mutate(percent_gdp_contribution_to_national_percent_change = gdp_contribution_to_national_percent_change*canada_percent_change_per_industry) %>%
   mutate(across(where(is.numeric), round, 3)) ->
   provinces_gdp_CPC_canada_gdp
 
 write.csv(provinces_gdp_CPC_canada_gdp, file = "clean_contribution_to_national_gdp_percent_change_step1.2.csv")
 
 interactive_table(provinces_gdp_CPC_canada_gdp)
-
-
 
 
 
